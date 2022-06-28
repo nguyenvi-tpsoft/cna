@@ -23,11 +23,11 @@
 </div>
 
 <section>
-    <div class="section about">
+    <div class="about">
         <div class="container">
             <div class="title text-center">
                 <div class="page-title color">
-                        <h2 style="background-repeat: no-repeat;
+                    <h2 style="background-repeat: no-repeat;
                                     background-position: center bottom;
                                     background-size: auto;
                                     padding-bottom: 30px;
@@ -38,7 +38,7 @@
                                     font-family: UTM-COPPERPLATE;
                                      ">ĐIỀU LỆ HỘI CÔNG CHỨNG VIÊN CẦN THƠ </h2>
 
-                        <br>
+                    <br>
                     {{-- </div> --}}
                 </div>
             </div>
@@ -47,18 +47,18 @@
             <div class="section wrap-product-categories" style="margin-bottom: 1px">
 
 
-               <img src="{{asset('public/frontend/img/dieule/dieule1.PNG')}}" style="width: 50rem; margin-left: 10rem">
-               <img src="{{asset('public/frontend/img/dieule/dieule2.PNG')}}" style="width: 50rem; margin-left: 10rem">
+                <img src="{{asset('public/frontend/img/dieule/dieule1.PNG')}}" style="width: 50rem; margin-left: 10rem">
+                <img src="{{asset('public/frontend/img/dieule/dieule2.PNG')}}" style="width: 50rem; margin-left: 10rem">
 
-               <img src="{{asset('public/frontend/img/dieule/dieule3.PNG')}}" style="width: 50rem; margin-left: 10rem">
+                <img src="{{asset('public/frontend/img/dieule/dieule3.PNG')}}" style="width: 50rem; margin-left: 10rem">
 
-               <img src="{{asset('public/frontend/img/dieule/dieule4.PNG')}}" style="width: 50rem; margin-left: 10rem">
-               <img src="{{asset('public/frontend/img/dieule/dieule5.PNG')}}" style="width: 50rem; margin-left: 10rem">
-               <img src="{{asset('public/frontend/img/dieule/dieule6.PNG')}}" style="width: 50rem; margin-left: 10rem">
-               <img src="{{asset('public/frontend/img/dieule/dieule7.PNG')}}" style="width: 50rem; margin-left: 10rem">
-               <img src="{{asset('public/frontend/img/dieule/dieule8.PNG')}}" style="width: 50rem; margin-left: 10rem">
+                <img src="{{asset('public/frontend/img/dieule/dieule4.PNG')}}" style="width: 50rem; margin-left: 10rem">
+                <img src="{{asset('public/frontend/img/dieule/dieule5.PNG')}}" style="width: 50rem; margin-left: 10rem">
+                <img src="{{asset('public/frontend/img/dieule/dieule6.PNG')}}" style="width: 50rem; margin-left: 10rem">
+                <img src="{{asset('public/frontend/img/dieule/dieule7.PNG')}}" style="width: 50rem; margin-left: 10rem">
+                <img src="{{asset('public/frontend/img/dieule/dieule8.PNG')}}" style="width: 50rem; margin-left: 10rem">
 
-             </div>
+            </div>
 
 
 

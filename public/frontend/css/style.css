@@ -12,6 +12,14 @@ body {
     font-family: "Streamster";
     src: url("../libs/font/Streamster.ttf");
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "FontAwesome";
+}
 a {
     color: #8b8b99;
     text-decoration: none;
@@ -49,7 +57,6 @@ button:focus {
     margin: 0 50px;
 }
 .pd-top-bottom {
-    padding: 90px 0;
     overflow: hidden;
 }
 .m-top-10 {
@@ -120,8 +127,14 @@ ul {
 li {
     list-style: none;
 }
+.content-right.diemtin a {
+    font-size: 22px;
+    font-family: "FontAwesome";
+    color: black;
+    line-height: 1.4;
+}
 .section {
-    margin-bottom: 90px;
+    margin: 20px 0;
 }
 .display-none {
     display: none;
@@ -210,7 +223,9 @@ input.search-query.form-control {
     height: 100px;
     -webkit-transition: all 0.35s;
     transition: all 0.35s;
+    transform: scale(1);
     -webkit-transform: scale(1);
+    -ms-transform: scale(1);
 }
 .section-video .video-close {
     position: absolute;
@@ -308,12 +323,7 @@ textarea:focus {
 #top-header .index-logo {
     line-height: 100px;
 }
-#top-header .main-header {
-    /**     * 1.1.1 Header - Menu     */ /**     * 1.1.2 Header - Cart     */
-}
-#top-header .main-header .main-nav {
-    /* dropdown-menu level 1 */ /* dropdown-menu level 2 */ /* dropdown-menu level 3 */
-}
+
 #top-header .main-header .main-nav > ul {
     text-align: center;
     float: none;
@@ -328,10 +338,11 @@ textarea:focus {
     text-transform: uppercase;
 }
 #top-header .main-header .main-nav > ul > li > a {
-    /* display: block;    */
     color: #27272f;
     padding: 0 15px;
     line-height: 100px;
+    font-family: "FontAwesome";
+    font-weight: bold;
 }
 #top-header .main-header .main-nav > ul > li > a:hover,
 #top-header .main-header .main-nav > ul > li > a:focus,
@@ -445,8 +456,9 @@ textarea:focus {
 #top-header .main-header .main-nav .dropdown-menu li a {
     display: block;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 16px;
     white-space: nowrap;
+    font-family: "FontAwesome";
 }
 #top-header .main-header .main-nav .dropdown-menu li a:hover {
     background-color: transparent;
@@ -533,7 +545,7 @@ textarea:focus {
 }
 #top-header .main-header .header-block .popup-title {
     line-height: 100px;
-    height: 100px;
+    height: 55px;
 }
 #top-header .main-header .header-block:hover .popup-content {
     display: block;
@@ -555,9 +567,8 @@ textarea:focus {
 #top-header .main-header .header-block .popup-content {
     padding: 15px;
     position: absolute;
-    top: 100%;
+    top: 75px;
     background: white;
-    min-width: 180px;
     z-index: 999;
     display: none;
     right: 0;
@@ -845,17 +856,53 @@ textarea:focus {
     font-weight: 500;
 } /** * 1.2. Body */
 .button-main {
-    font-size: 14px;
-    padding: 0 32px;
+    font-size: 14px !important;
+    padding: 6px 32px;
     font-weight: 500;
     border-width: 1px;
-    height: 50px;
     line-height: 48px;
     color: #fff;
     border-color: #91ad41;
     background-color: #91ad41;
     text-transform: uppercase;
     border: 1px solid #91ad41;
+    border-color: rgba(0, 0, 0, 0.02);
+}
+.button-main.diemtin {
+    background-color: rgba(0, 0, 0, 0.02);
+    box-shadow: 1px 1px 3px 0px rgb(0 0 0 / 20%), 0 1px 0 rgb(0 0 0 / 7%),
+        inset 0 0 0 1px rgb(0 0 0 / 5%);
+    color: #9f6605 !important;
+    border-color: rgba(0, 0, 0, 0.02);
+    margin-top: 10px;
+}
+.content-about {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.content-about .item {
+    margin: 20px 40px;
+}
+.content-about .item-content .sub-title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.content-about .item-content .sub-title h3 {
+    font-family: "FontAwesome";
+    color: black;
+    font-size: 20px;
+}
+.content-about .item-content .sub-title h3:first-child {
+    font-weight: bold;
+}
+.content-about .item-content .sub-title h3:last-child {
+    width: 195px;
+}
+.button-main.diemtin:hover {
+    background-color: #fff;
 }
 .button-main:hover {
     background-color: #8d8d99;
@@ -1004,6 +1051,8 @@ textarea:focus {
 } /** * 1.2.2 Block - About */
 .about .item img {
     transition: 0.5s;
+    width: 73px;
+    height: 100px;
 }
 .about .item:hover img {
     transform: scale(1.1);
@@ -1013,9 +1062,20 @@ textarea:focus {
 }
 .oars-store .page-title .title-h2 {
     background-position: left bottom;
+    font-size: 25px;
+    font-family: "FontAwesome";
 }
 .oars-store .page-title .description {
     margin: 15px 0 !important;
+}
+.page-title.diemtin {
+    text-align: left;
+}
+.page-title h2 {
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 15px 0;
 }
 .oars-store .img-left {
     padding: 70px 60px 30px 100px;
@@ -1038,7 +1098,16 @@ textarea:focus {
 }
 .oars-store .index-core-group .item-content p {
     margin-bottom: 0;
-} /** * 1.2.4 Block - Generalship */
+}
+.ttchncc_item {
+    margin-bottom: 15px;
+    width: 32%;
+    height: 10rem;
+    box-shadow: 1px 1px 3px 0px rgb(0 0 0 / 20%), 0 1px 0 rgb(0 0 0 / 20%),
+        inset 0 0 0 1px rgb(0 0 0 / 5%);
+    margin-left: 1.5rem;
+    cursor: pointer;
+}
 .generalship .inner {
     padding-top: 70px;
     padding-bottom: 70px;
@@ -1088,6 +1157,9 @@ textarea:focus {
 .feature-products .item {
     margin-bottom: 50px;
 }
+.product-image-container .product-img-link img {
+    height: 20rem;
+}
 .feature-products .item:hover .product-img-link .img-hover {
     position: absolute;
     top: 0;
@@ -1099,6 +1171,7 @@ textarea:focus {
     font-size: 14px;
 }
 .feature-products .item span {
+    font-family: "FontAwesome";
     color: #91ad41;
     font-size: 16px;
     font-weight: 500;
@@ -1529,7 +1602,6 @@ textarea:focus {
     font-smooth: always;
     -ms-font-smoothing: antialiased;
     -webkit-font-smoothing: antialiased;
-    font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font: normal normal normal 14px/1 FontAwesome;
     text-rendering: auto;
@@ -1581,12 +1653,11 @@ textarea:focus {
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: auto;
-    padding-bottom: 30px;
     margin-bottom: 0;
     color: #282828;
     font-weight: 600;
     font-size: 35px;
-    font-family: "Poppins", sans-serif;
+    font-family: "FontAwesome";
 }
 .description {
     font-size: 14px;
@@ -1624,6 +1695,7 @@ textarea:focus {
     width: 40px;
     height: 2px;
     background-color: #1e551e;
+    transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
 }
@@ -1812,7 +1884,7 @@ textarea:focus {
     margin-left: 20px;
 }
 .footer .footer-bottom .item-content {
-    margin-top: 0;
+    margin-top: 15px;
 }
 .footer .footer-bottom .item-content .title-black:after,
 .footer .footer-bottom .item-content .title-black:before {
@@ -2072,8 +2144,8 @@ textarea:focus {
     margin: 0;
 }
 .group-store .item-content h4 {
-    padding-bottom: 0;
-    margin-bottom: 6px;
+    padding-left: 10px;
+    font-size: 15px;
 }
 .group-store .item-content h4:after,
 .group-store .item-content h4:before {
@@ -2437,7 +2509,6 @@ textarea:focus {
     font-smooth: always;
     -ms-font-smoothing: antialiased;
     -webkit-font-smoothing: antialiased;
-    font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font: normal normal normal 14px/1 FontAwesome;
     text-rendering: auto;
@@ -3215,9 +3286,7 @@ textarea:focus {
 .home-3 #top-header .main-header {
     background: #27272f;
 }
-.home-3 #top-header .main-header .main-nav {
-    /* dropdown-menu level 2 */
-}
+
 .home-3 #top-header .main-header .main-nav > ul > li {
     background: none;
 }
@@ -4354,6 +4423,7 @@ textarea:focus {
     color: white;
     background: #27272f;
 }
+
 .menu-right.active .fix-sticky {
     position: fixed;
     top: 0;
@@ -5187,13 +5257,29 @@ textarea:focus {
     content: "\e919";
 }
 .page-title-breadcrumbs {
-    padding-top: 150px !important;
-    padding-bottom: 150px !important;
+    padding: 100px 0;
     background-image: url("../img/banner1.jpg") !important;
     margin-top: 6rem;
     background-position: center !important;
     background-repeat: no-repeat !important;
-    margin-bottom: 80px;
+    margin-bottom: 0px;
+    position: relative;
+}
+.page-title-breadcrumbs::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    display: block;
+}
+.breadcrumbs-container.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .page-title-breadcrumbs .breadcrumbs {
     list-style: none;
@@ -6356,6 +6442,7 @@ textarea:focus {
 .product-category-list-fullwidth .content-right {
     padding-right: 25px;
 }
+
 .wrap-product-categories .group-caption .categories-caption {
     color: #91ad41;
 }
@@ -6811,6 +6898,7 @@ textarea:focus {
     .sidebar-block
     .new-item-content
     ul.scroll-product::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     background-color: #eaeaea;
@@ -7004,7 +7092,6 @@ textarea:focus {
 }
 .post-navigation .post-next {
     text-align: right;
-    float: right;
     display: inline-block;
     max-width: 265px;
 }
@@ -7764,6 +7851,7 @@ a:hover {
 
 .nivo-controlNav {
     color: white;
+    height: 0;
 }
 
 a.nivo-prevNav {
@@ -7772,6 +7860,10 @@ a.nivo-prevNav {
 
 a.nivo-nextNav {
     display: none;
+}
+.nivoSlider {
+    margin-top: 6rem;
+    height: 450px;
 }
 
 @media screen and (max-width: 2000px) {

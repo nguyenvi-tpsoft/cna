@@ -25,39 +25,33 @@
 
 
 <div class="section about">
-                <div class="container">
-                    <div class="title text-center">
-                        <div class="page-title color">
-                            <div class="title title-icon">
-                                <h2 class="title-h2">HỘI VIÊN</h2>
+    <div class="container">
+        <div class="title text-center">
+            <div class="page-title color">
+                <div class="title title-icon">
+                    <h2 class="title-h2">HỘI VIÊN</h2>
 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content-about text-center m-top">
-                        <div class="row">
-                            @foreach($hoivien as $key=>$hv)
-                            <div class="col-lg-3 col-md-6 col-sm-12 mg-bottom-50">
-                                <div class="item">
-                                    <div class="item-img">
-                                        <a href="#" title=""><img class="img-fluid" src="{{URL::to('public/upload'.$hv->ANH_HV)}}" alt="img" style="width: 10rem; height: 13rem">
-                                        </a>
-                                    </div>
-                                    <div class="item-content">
-                                        <div class="sub-title">
-                                            <h3 style="    font-size: 19px; font-family: math; color: black; font-weight: 600">{{$hv->TEN_HV}}</h3>
-
-                                            <h3 style="    font-size: 19px; font-family: math; color: black;">{{$hv->VANPHONG_HV}}</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            @endforeach
-
-                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-about text-center m-top">
+            @foreach($hoivien as $key=>$hv)
+            <div class="item">
+                <div class="item-img">
+                    <a href="#" title=""><img class="img-fluid" src="{{URL::to('public/upload'.$hv->ANH_HV)}}" alt="img">
+                    </a>
+                </div>
+                <div class="item-content">
+                    <div class="sub-title">
+                        <h3>{{$hv->TEN_HV}}</h3>
+                        <h3>{{$hv->VANPHONG_HV}}</h3>
                     </div>
                 </div>
             </div>
+            @endforeach
+        </div>
+    </div>
+</div>
 
 
 

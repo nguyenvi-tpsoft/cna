@@ -26,38 +26,16 @@
     <div class="section about">
         <div class="container">
             <div class="title text-center">
-                <div class="page-title color">
-                        <h2 style="background-repeat: no-repeat;
-                                    background-position: center bottom;
-                                    background-size: auto;
-                                    padding-bottom: 30px;
-                                    margin-bottom: 0;
-                                    color: #b36b00;
-                                    font-weight: 600;
-                                    font-size: 30px;
-                                    font-family: UTM-COPPERPLATE;
-                                     margin-right: 51rem;">GIỚI THIỆU CHUNG </h2>
-
-                        <br>
-                    {{-- </div> --}}
+                <div class="page-title diemtin">
+                    <h2>GIỚI THIỆU CHUNG </h2>
                 </div>
             </div>
-
-
             <div class="section wrap-product-categories" style="margin-bottom: 1px; color: black">
 
-                <img src="{{asset('public/frontend/img/sodotochuc.png')}}" style="width: 70rem; height: 50rem;">
-
-             </div>
-
-
-
+                <img src="{{asset('public/frontend/img/sodotochuc.png')}}" style="width: 100%;">
+            </div>
         </div>
     </div>
 </section>
-
-
-
-
 
 @endsection
