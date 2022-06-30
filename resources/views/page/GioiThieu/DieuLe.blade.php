@@ -44,5 +44,17 @@
                 <img src="{{asset('public/frontend/img/dieule/dieule6.PNG')}}">
                 <img src="{{asset('public/frontend/img/dieule/dieule7.PNG')}}">
                 <img src="{{asset('public/frontend/img/dieule/dieule8.PNG')}}">
+
             </div>
 
+
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+@endsection

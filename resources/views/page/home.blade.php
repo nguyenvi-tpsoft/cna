@@ -39,10 +39,14 @@
                             @endforeach
                         </div>
                     </div>
+                    <div class="col-lg-6 col-md-6">
                         <div class="title clearfix">
 
                             <div class="group-store">
 
+                                <div class="index-core-group flex-center clearfix d-flex align-items-center">
+
+                                    <div class="row" style=" display: block;">
                                         @foreach($diemtin as $key=>$dt)
                                         <div class="index-core-group flex-center clearfix  align-items-center">
                                             <div class="item-img float-left">
