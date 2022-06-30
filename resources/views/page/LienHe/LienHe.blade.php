@@ -10,7 +10,7 @@
             </div>
             <div class="breadcrumbs-container text-center">
                 <ul class="breadcrumbs primary-font">
-                    <li><a href="#"><span style="font-family: 'FontAwesome'; color: #10550c">Liên hệ</span></a>
+                    <li><a href="#"><span style="font-family: 'FontAwesome'; color: #ffff">Liên hệ</span></a>
                     </li>
                 </ul>
             </div>

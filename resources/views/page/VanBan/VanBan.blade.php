@@ -11,7 +11,7 @@
             </div>
             <div class="breadcrumbs-container text-center">
                 <ul class="breadcrumbs primary-font">
-                    <li><a href="#"><span style="font-family: 'FontAwesome'; color: #10550c">Văn bản</span></a>
+                    <li><a href="#"><span style="font-family: 'FontAwesome'; color: #ffff">Văn bản</span></a>
                     </li>
                     </li>
                 </ul>

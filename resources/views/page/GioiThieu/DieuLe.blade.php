@@ -14,7 +14,7 @@
                     <li><a href="{{URL::to('/trang-chu')}}"><span style="font-family: 'FontAwesome'; color: white">Giới thiệu</span></a>
                     </li>
                     <li class="breadcrumb-sep">/</li>
-                    <li><span style="font-family: 'FontAwesome'; color: #10550c">Điều lệ</span>
+                    <li><span style="font-family: 'FontAwesome'; color: #ffff">Điều lệ</span>
                     </li>
                 </ul>
             </div>

@@ -14,7 +14,7 @@
                     <li><span style="font-family: 'FontAwesome'; color: white">Hội viên</span>
                     </li>
                     <li class="breadcrumb-sep">/</li>
-                    <li><a href="#"><span style="font-family: 'FontAwesome'; color: #10550c">Biểu mẫu CCV</span></a>
+                    <li><a href="#"><span style="font-family: 'FontAwesome'; color: #ffff">Biểu mẫu CCV</span></a>
                     </li>
                     </li>
                 </ul>

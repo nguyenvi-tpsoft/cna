@@ -14,7 +14,7 @@
                     <li><a href="{{URL::to('/trang-chu')}}"><span style="font-family: 'FontAwesome'; color: white">Giới thiệu</span></a>
                     </li>
                     <li class="breadcrumb-sep">/</li>
-                    <li><span style="font-family: 'FontAwesome'; color: #10550c">Giới thiệu chung</span>
+                    <li><span style="font-family: 'FontAwesome'; color: #ffff">Giới thiệu chung</span>
                     </li>
                 </ul>
             </div>

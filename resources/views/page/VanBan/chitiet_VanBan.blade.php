@@ -16,7 +16,7 @@
 
                     <li class="breadcrumb-sep">/</li>
                     @foreach($vanban as $key=>$vb)
-                    <li><span style="font-family: 'FontAwesome'; color: #10550c">{{$vb->TIEUDE_VB}}</span>
+                    <li><span style="font-family: 'FontAwesome'; color: #ffff">{{$vb->TIEUDE_VB}}</span>
                     </li>
                     @endforeach
                 </ul>

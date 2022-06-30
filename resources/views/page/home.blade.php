@@ -105,7 +105,7 @@
 
                                     <div class="index-core-group flex-center clearfix d-flex align-items-center">
 
-                                        <div class="row" style=" display: block;">
+                                        <div style=" display: block;">
                                             @foreach($vanban as $key=>$vb)
 
                                             <div class="index-core-group flex-center clearfix align-items-center">
@@ -142,7 +142,7 @@
 
                                 <div class="group-store">
                                     <div class="index-core-group flex-center clearfix d-flex align-items-center">
-                                        <div class="row" style=" display: block;">
+                                        <div style="display: block;">
                                             @php $i=0; @endphp @foreach($phapluat as $key=>$pl) @php $i++; @endphp
                                             <div class="index-core-group flex-center clearfix  align-items-center">
 

@@ -16,7 +16,7 @@
 
                     <li class="breadcrumb-sep">/</li>
                     @foreach($ten as $key=>$ten)
-                    <li><span style="font-family: 'FontAwesome'; color: #10550c">{{$ten->TEN_VPCC}}</span>
+                    <li><span style="font-family: 'FontAwesome'; color: #ffff">{{$ten->TEN_VPCC}}</span>
                     </li>
                     @endforeach
                 </ul>

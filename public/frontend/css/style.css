@@ -1136,6 +1136,7 @@ textarea:focus {
 .oars-store .index-core-group .item-content h4 {
     padding-bottom: 5px;
     margin-bottom: 0;
+    text-align: justify;
 }
 .oars-store .index-core-group .item-content h4::after {
     content: none;
@@ -6493,6 +6494,9 @@ textarea:focus {
 
 .wrap-product-categories .group-caption .categories-caption {
     color: #91ad41;
+}
+.wrap-product-categories p {
+    text-align: justify;
 }
 .wrap-product-categories .group-caption .categories-title a:hover {
     color: #91ad41;

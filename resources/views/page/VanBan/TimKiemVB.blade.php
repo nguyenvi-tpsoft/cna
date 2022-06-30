@@ -11,7 +11,7 @@
             </div>
             <div class="breadcrumbs-container text-center">
                 <ul class="breadcrumbs primary-font">
-                    <li><a href="#"><span style="font-family: 'FontAwesome'; color: #10550c">Kết quả tìm kiếm</span></a>
+                    <li><a href="#"><span style="font-family: 'FontAwesome'; color: #ffff">Kết quả tìm kiếm</span></a>
                     </li>
                     </li>
                 </ul>
