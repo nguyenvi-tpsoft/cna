@@ -92,8 +92,4 @@
 
 
 
-<<<<<<< HEAD
 @endsection
-=======
-@endsection
->>>>>>> 778f79fe7660f28b919e59743f96418e366383dc
