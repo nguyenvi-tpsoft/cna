@@ -1,11 +1,21 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="vn">
+=======
+<html lang="zxx">
+>>>>>>> 778f79fe7660f28b919e59743f96418e366383dc
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon.png" type="image/png"><!-- Goggle Fonts-->
+<<<<<<< HEAD
+=======
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet"><!-- Libs CSS -->
+>>>>>>> 778f79fe7660f28b919e59743f96418e366383dc
     <link rel="stylesheet" href="{{asset('public/frontend/libs/boostrap/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('public/frontend/libs/flaticon/css/flaticon.css')}}">
     <link rel="stylesheet" href="{{asset('public/frontend/libs/font-awesome/css/font-awesome.min.css')}}">
@@ -16,7 +26,10 @@
     <link rel="stylesheet" href="{{asset('public/frontend/libs/slider-range/css/jslider.css')}}">
     <link rel="stylesheet" href="{{asset('public/frontend/libs/font-cs/cs.css')}}"><!-- Template CSS -->
     <link rel="stylesheet" type="text/css" href="{{asset('public/frontend/css/style.css')}}">
+<<<<<<< HEAD
     <link rel="stylesheet" type="text/css" href="{{asset('public/frontend/css/responsive.css')}}">
+=======
+>>>>>>> 778f79fe7660f28b919e59743f96418e366383dc
     <link rel="stylesheet" type="text/css" href="{{asset('public/frontend/css/sweetalert.css')}}">
 
     <link rel="stylesheet" href="{{asset('public/frontend/css/toastr.min.css')}}">
@@ -24,8 +37,14 @@
 
     <link rel="stylesheet" href="{{asset('public/frontend/css/jquery.mCustomScrollbar.min.css')}}">
     <!-- Tweaks for older IEs-->
+<<<<<<< HEAD
     <link rel="stylesheet" href="{{asset('public/frontend/css/font-awesome.css')}}">
     <link rel="stylesheet" href="{{asset('public/frontend/css/jquery.fancybox.min.css')}}" media="screen">
+=======
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+
+>>>>>>> 778f79fe7660f28b919e59743f96418e366383dc
     <link rel="icon" href="{{asset('public/frontend/img/logo.jpg')}}" type="image/gif" />
     <title> Hội công chứng viên Cần Thơ</title>
 
@@ -186,7 +205,10 @@
                                         </ul>
                                     </nav>
                                 </div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 778f79fe7660f28b919e59743f96418e366383dc
                             </div>
                         </div>
                     </div>
@@ -197,6 +219,10 @@
     </header>
     <main>
         @yield('content')
+<<<<<<< HEAD
+=======
+
+>>>>>>> 778f79fe7660f28b919e59743f96418e366383dc
     </main>
     <footer>
         <div class="footer">
@@ -205,11 +231,21 @@
 
                 <div class="container">
                     <div class="row">
+<<<<<<< HEAD
                         <div class="col-12">
                             <div class="title clearfix">
                                 <div class=" page-title color">
                                     <div class="title-icon text-left footer">
                                         <h2>Hội công chứng viên Cần Thơ</h2>
+=======
+                        <div class="col-lg-5 col-md-12">
+                            <div class="title clearfix">
+                                <div class=" page-title color">
+                                    <div class="title-icon text-left">
+                                        <h2 class="title-h2" style="width: 35rem;
+                                                font-family: auto;
+                                                color: white;">Hội công chứng viên Cần Thơ</h2>
+>>>>>>> 778f79fe7660f28b919e59743f96418e366383dc
                                     </div>
                                 </div>
                             </div>
@@ -242,7 +278,11 @@
                             </div>
                         </div>
 
+<<<<<<< HEAD
                         <div class="col-lg-3 col-md-6 col-sm-6 mg-bottom-30">
+=======
+                        <div class="col-lg-3 col-md-6 col-sm-6 mg-bottom-30" style="margin-left: 4rem">
+>>>>>>> 778f79fe7660f28b919e59743f96418e366383dc
                             <div class="item contact-us">
                                 <div class="item-content">
                                     <div class="sub-title">
@@ -265,7 +305,11 @@
                             </div>
                         </div>`
 
+<<<<<<< HEAD
                         <div class="col-lg-3 col-md-6 col-sm-6 mg-bottom-30">
+=======
+                        <div class="col-lg-3 col-md-6 col-sm-6 mg-bottom-30" style="margin-left: 4rem">
+>>>>>>> 778f79fe7660f28b919e59743f96418e366383dc
                             <div class="item contact-us">
                                 <div class="item-content">
                                     <div class="sub-title">
@@ -308,7 +352,11 @@
     </footer>
     </div><!-- Back-To-Top Button -->
     <div class="back-to-top"><a href="#"><i class="fa fa-long-arrow-up"></i></a></div><!-- Page Loader -->
+<<<<<<< HEAD
     <div id="page-preloader">
+=======
+    <!-- <div id="page-preloader">
+>>>>>>> 778f79fe7660f28b919e59743f96418e366383dc
         <div class="page-loading">
             <div class="dot"></div>
             <div class="dot"></div>
@@ -316,7 +364,11 @@
             <div class="dot"></div>
             <div class="dot"></div>
         </div>
+<<<<<<< HEAD
     </div>
+=======
+    </div> -->
+>>>>>>> 778f79fe7660f28b919e59743f96418e366383dc
     <script src="{{asset('public/frontend/libs/jquery/jquery-1.11.3.min.js')}}"></script>
     <script src="{{asset('public/frontend/libs/owl.carousel/owl.carousel.js')}}"></script>
     <script src="{{asset('public/frontend/libs/boostrap/js/bootstrap.min.js')}}"></script>
@@ -338,6 +390,7 @@
 
 
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<<<<<<< HEAD
     <script>
         $("#menu_mb_control").click(function() {
             $("#index_menu_mb").toggle();
@@ -348,6 +401,10 @@
             $(e).parent().find('.dropdown-menu').toggle();
         }
     </script>
+=======
+
+
+>>>>>>> 778f79fe7660f28b919e59743f96418e366383dc
     <script>
         $(function() {
             // bind change event to select

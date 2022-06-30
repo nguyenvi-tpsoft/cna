@@ -1205,7 +1205,6 @@ textarea:focus {
 .feature-products .item {
     margin-bottom: 50px;
 }
-
 .feature-products .item:hover .product-img-link .img-hover {
     position: absolute;
     top: 0;

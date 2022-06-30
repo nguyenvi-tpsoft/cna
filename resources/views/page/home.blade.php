@@ -39,14 +39,10 @@
                             @endforeach
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6">
                         <div class="title clearfix">
 
                             <div class="group-store">
 
-                                <div class="index-core-group flex-center clearfix d-flex align-items-center">
-
-                                    <div class="row" style=" display: block;">
                                         @foreach($diemtin as $key=>$dt)
                                         <div class="index-core-group flex-center clearfix  align-items-center">
                                             <div class="item-img float-left">
@@ -74,9 +70,12 @@
 
                     </div>
                 </div>
+<<<<<<< HEAD
             </div>
         </div>
     </div>
+=======
+>>>>>>> 778f79fe7660f28b919e59743f96418e366383dc
 </section>
 
 
@@ -108,14 +107,24 @@
                                         <div class="row" style=" display: block;">
                                             @foreach($vanban as $key=>$vb)
 
+<<<<<<< HEAD
                                             <div class="index-core-group flex-center clearfix align-items-center">
                                                 <div class="item-img float-left">
                                                     <a href="{{URL::to('chi-tiet-van-ban/'.$vb->ID_VB)}}" title=""><img class="img-fluid" src="{{URL::to('public/upload/'.$vb->HINHANH_VB)}}"></a>
+=======
+                                            <div class="index-core-group flex-center clearfix  align-items-center">
+                                                <div class="item-img float-left" style="width: 16rem">
+                                                    <a href="{{URL::to('chi-tiet-van-ban/'.$vb->ID_VB)}}" title=""><img class="img-fluid" style="height: 8rem; width: 15rem;" src="{{URL::to('public/upload/'.$vb->HINHANH_VB)}}"></a>
+>>>>>>> 778f79fe7660f28b919e59743f96418e366383dc
                                                 </div>
                                                 <div class="item-content" style="float: inherit">
                                                     <div class="sub-title">
                                                         <a href="{{URL::to('chi-tiet-van-ban/'.$vb->ID_VB)}}">
+<<<<<<< HEAD
                                                             <h4 class="no-ater">{{$vb->TIEUDE_VB}}</h4>
+=======
+                                                            <h4 class="no-ater" style="font-size: 18px; font-family: 'FontAwesome'">{{$vb->TIEUDE_VB}}</h4>
+>>>>>>> 778f79fe7660f28b919e59743f96418e366383dc
                                                         </a>
                                                     </div>
                                                 </div>
@@ -195,6 +204,7 @@
                             <div style="display: flex; flex-wrap: wrap;">
                                 @foreach($vpcc as $key=>$vp)
 
+<<<<<<< HEAD
                                 <div class="row ttchncc_item" onclick='location.href="{{URL::to("chi-tiet-vpcc/".$vp->ID_VPCC)}}"'>
                                     <div class="product-image-container">
                                         <img src="{{asset('public/frontend/img/logo_item.png')}}" alt="img">
@@ -203,6 +213,28 @@
                                         <a href="{{URL::to('chi-tiet-vpcc/'.$vp->ID_VPCC)}}">Văn phòng công chứng
                                             {{$vp->TEN_VPCC}}</a>
                                     </div>
+=======
+                                <div class="row ttchncc_item" href="#">
+                                    <div class="col-md-5 col-sm-12" style="max-width: 15rem">
+                                        <div class="product-thumb">
+                                            <div class="product-container ">
+                                                <div class="product-image-container">
+                                                    <a class="product-img-link" href="{{URL::to('chi-tiet-vpcc/'.$vp->ID_VPCC)}}" title=""><img src="{{asset('public/frontend/img/logo.jpg')}}" alt="img" style="width: 5rem; height: 5rem; margin:1rem">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="width: 50% ; margin-top: 2rem">
+                                        <div class="content-right" style="color: black">
+                                            <a href="{{URL::to('chi-tiet-vpcc/'.$vp->ID_VPCC)}}" style="font-family: emoji; color: black; font-size: 18px">Văn phòng công chứng
+                                                {{$vp->TEN_VPCC}}</a>
+
+                                        </div>
+                                    </div>
+
+
+>>>>>>> 778f79fe7660f28b919e59743f96418e366383dc
                                 </div>
 
 
