@@ -36,6 +36,13 @@
                             <a href="{{URL::to('chi-tiet-diem-tin/'.$dt->ID_DT)}}" title="">
                                 <img style="width: 100%" src="{{URL::to('public/upload/'.$dt->HINHANH_DT)}}" alt="img">
                             </a>
+                            <div class="item-content">
+                                <div class="sub-title">
+                                    <a href="{{URL::to('chi-tiet-diem-tin/'.$dt->ID_DT)}}">
+                                        <h4 class="no-ater">{{$dt->TIEUDE_DT}}</h4>
+                                    </a>
+                                </div>
+                            </div>
                             @endforeach
                         </div>
                     </div>

@@ -208,7 +208,7 @@
                             <div class="title clearfix">
                                 <div class=" page-title color">
                                     <div class="title-icon text-left footer">
-                                        <h2>Hội công chứng viên Cần Thơ</h2>
+                                        <h2>CÔNG CHỨNG VIÊN CẦN THƠ</h2>
                                     </div>
                                 </div>
                             </div>
@@ -230,9 +230,10 @@
                                 <div class="content">
 
                                     <ul>
-                                        <li class="d-flex bg-icon"><span><i class="fa fa-map-marker" aria-hidden="true"></i></span><span> Số 1A Trần Khánh Dư, Xuân Khánh, Ninh Kiều, Cần Thơ .</span>
+                                        <li class="d-flex bg-icon"><span><i class="fa fa-map-marker" aria-hidden="true"></i></span><span>296 Đường 30/4, Xuân Khánh, Ninh Kiều, Cần Thơ</span>
                                         </li>
-                                        <li class="d-flex bg-icon"><span><i class="fa fa-phone" aria-hidden="true"></i></span><span>02923.832.213</span>
+                                        <li class="d-flex bg-icon"><span><i class="fa fa-phone" aria-hidden="true"></i></span><span>Thư ký hội: Nguyễn Thu Hà: 0907 981 060
+                                            </span>
                                         </li>
                                         <li class="d-flex bg-icon"><span><i class="fa fa-paper-plane-o" aria-hidden="true"></i></span><span>hoicongchungct@gmail.com</span>
                                         </li>

@@ -6,7 +6,7 @@
     <div class="breadcrumbs-container container">
         <div class="breadcrumbs_wrapper">
             <div class="page-title-container">
-                <h1 class="text-center">Hội công chứng viên Cần Thơ</h1>
+                <h1 class="text-center">CÔNG CHỨNG VIÊN CẦN THƠ</h1>
             </div>
             <div class="breadcrumbs-container text-center">
                 <ul class="breadcrumbs primary-font">
@@ -47,19 +47,19 @@
                         <div class="header-contact" style="color: black">
 
                             <div class="lienhe_div item-right">
-                                <p>Địa chỉ: Số 1A Trần Khánh Dư, Xuân Khánh, Ninh Kiều, Cần Thơ.</p>
+                                <p>Địa chỉ: 296 Đường 30/4, Xuân Khánh, Ninh Kiều, Cần Thơ</p>
                                 <p>Số điện thoại: 02923.832.213</p>
                                 <p>Email: hoicongchungct@gmail.com</p>
                             </div>
                             <div class="lienhe_div item-right">
                                 <p>Nguyễn Thanh Đình - Chủ tịch </p>
-                                <p>ĐT: 0913.617.187</p>
+                                <p>ĐT: 02923.832.213</p>
                                 <p>Email: thanhdinhcantho@gmail.com</p>
 
                             </div>
                             <div class="lienhe_div item-right">
                                 <p>Nguyễn Thu Hà - Thư ký</p>
-                                <p>ĐT: 0907 981 060</p>
+                                <p>ĐT: 0907.981.060</p>
                                 <p>Email: ha0902017686@gmail.com</p>
                             </div>
 

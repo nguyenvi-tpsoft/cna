@@ -7,7 +7,7 @@
     <div class="breadcrumbs-container container">
         <div class="breadcrumbs_wrapper">
             <div class="page-title-container">
-                <h1 class="text-center">Hội công chứng viên Cần Thơ</h1>
+                <h1 class="text-center">CÔNG CHỨNG VIÊN CẦN THƠ</h1>
             </div>
             <div class="breadcrumbs-container text-center">
                 <ul class="breadcrumbs primary-font">
@@ -33,29 +33,29 @@
             <div class="section wrap-product-categories" style="margin-bottom: 1px; color: black">
 
                 <div class="content-about text-center m-top">
-                            <div class="row" style="justify-content: center">
-                                @foreach($chuyenmucthuvien as $key=>$chuyenmuc)
-                                <div class="col-lg-3 col-md-6 col-sm-12 mg-bottom-50" >
+                    <div class="row" style="justify-content: center">
+                        @foreach($chuyenmucthuvien as $key=>$chuyenmuc)
+                        <div class="col-lg-3 col-md-6 col-sm-12 mg-bottom-50">
 
-                                    <div class="right-left hidden-xs slow disciver-now" class="dd" >
-                                        <a class="btn button button-main" style="background-color: #1e551e" href="{{URL::to('chuyen-muc-thu-vien/'.$chuyenmuc->ID_CHUYENMUC_TV)}}">{{$chuyenmuc->TEN_CHUYENMUC_TV}}</a>
-                                     </div>
-                                </div>
-                                @endforeach
+                            <div class="right-left hidden-xs slow disciver-now" class="dd">
+                                <a class="btn button button-main" style="background-color: #1e551e" href="{{URL::to('chuyen-muc-thu-vien/'.$chuyenmuc->ID_CHUYENMUC_TV)}}">{{$chuyenmuc->TEN_CHUYENMUC_TV}}</a>
+                            </div>
+                        </div>
+                        @endforeach
 
-                                <div class="col-lg-3 col-md-6 col-sm-12 mg-bottom-50" >
+                        <div class="col-lg-3 col-md-6 col-sm-12 mg-bottom-50">
 
-                                    <div class="right-left hidden-xs slow disciver-now" class="dd" >
-                                        <a class="btn button button-main" style="background-color: #1e551e" href="{{URL::to('/phap-luat')}}">PHÁP LUẬT</a>
-                                     </div>
-                                </div>
-
-
+                            <div class="right-left hidden-xs slow disciver-now" class="dd">
+                                <a class="btn button button-main" style="background-color: #1e551e" href="{{URL::to('/phap-luat')}}">PHÁP LUẬT</a>
                             </div>
                         </div>
 
 
-             </div>
+                    </div>
+                </div>
+
+
+            </div>
 
 
 
