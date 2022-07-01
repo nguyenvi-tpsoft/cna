@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="{{asset('public/frontend/css/font-awesome.css')}}">
     <link rel="stylesheet" href="{{asset('public/frontend/css/jquery.fancybox.min.css')}}" media="screen">
     <link rel="icon" href="{{asset('public/frontend/img/logo.jpg')}}" type="image/gif" />
-    <title> Hội công chứng viên Cần Thơ</title>
+    <title>HỘI CÔNG CHỨNG VIÊN TP. CẦN THƠ</title>
 
 
 </head>
@@ -208,7 +208,7 @@
                             <div class="title clearfix">
                                 <div class=" page-title color">
                                     <div class="title-icon text-left footer">
-                                        <h2>CÔNG CHỨNG VIÊN CẦN THƠ</h2>
+                                        <h2>HỘI CÔNG CHỨNG VIÊN TP. CẦN THƠ</h2>
                                     </div>
                                 </div>
                             </div>

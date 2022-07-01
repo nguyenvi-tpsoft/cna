@@ -6,7 +6,7 @@
     <div class="breadcrumbs-container container">
         <div class="breadcrumbs_wrapper">
             <div class="page-title-container">
-                <h1 class="text-center">CÔNG CHỨNG VIÊN CẦN THƠ</h1>
+                <h1 class="text-center">HỘI CÔNG CHỨNG VIÊN TP. CẦN THƠ</h1>
             </div>
             <div class="breadcrumbs-container text-center">
                 <ul class="breadcrumbs primary-font">

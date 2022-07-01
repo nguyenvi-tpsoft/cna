@@ -7,7 +7,7 @@
     <div class="breadcrumbs-container container">
         <div class="breadcrumbs_wrapper">
             <div class="page-title-container">
-                <h1 class="text-center">CÔNG CHỨNG VIÊN CẦN THƠ</h1>
+                <h1 class="text-center">HỘI CÔNG CHỨNG VIÊN TP. CẦN THƠ</h1>
             </div>
             <div class="breadcrumbs-container text-center">
                 <ul class="breadcrumbs primary-font">
@@ -27,7 +27,7 @@
         <div class="container">
             <div class="title text-center">
                 <div class="page-title color">
-                    <h2>ĐIỀU LỆ HỘI CÔNG CHỨNG VIÊN CẦN THƠ </h2>
+                    <h2>ĐIỀU LỆ HỘI CÔNG CHỨNG VIÊN TP. CẦN THƠ</h2>
                 </div>
             </div>
 
