@@ -71,10 +71,14 @@
     }
     .header {
         width: auto;
-        height: 7rem;
+        height: 72px;
+        margin-top: -97px;
+    }
+    .logo {
+        width: 60%;
     }
     .nivoSlider {
-        margin-top: 6rem;
+        margin-top: 72px;
         height: 100px;
     }
     .page-title h2 {
@@ -98,17 +102,17 @@
     }
     .index_menu_mb {
         position: absolute;
-        top: 97px;
+        top: 72px;
         left: -20px;
         right: -20px;
         background-color: #fff;
         min-width: 100%;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
     }
     .index_menu_mb li {
         text-align: left;
         width: 100%;
-        padding: 10px 15px;
+        padding: 10px 30px;
         border-bottom: 1px solid #ddd;
     }
     .index_menu_mb li:last-child {

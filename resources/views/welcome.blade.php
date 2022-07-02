@@ -48,7 +48,7 @@
 
                                     </div>
                                     <a href="{{URL::to('/trang-chu')}}">
-                                        <img src="{{asset('public/frontend/img/logo.png')}}" alt="">
+                                        <img class="logo" src="{{asset('public/frontend/img/logo.png')}}" alt="">
 
                                     </a>
                                     <div id="index_menu_mb" class="index_menu_mb">
@@ -206,9 +206,9 @@
                     </div>
                 </div>
             </div>
+        </header>
     </div>
 
-    </header>
     <main>
         @yield('content')
     </main>
