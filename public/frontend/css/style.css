@@ -40,8 +40,8 @@ button:focus {
     position: fixed;
     background-color: white;
     box-shadow: 0px 2px 2px rgb(0 0 0 / 26%);
-    margin-top: -6rem;
-    height: 6rem;
+    margin-top: -96px;
+    height: 112px;
 }
 .menu_mb_control {
     display: none;
@@ -157,7 +157,7 @@ li {
     line-height: 1.4;
 }
 .logo_vpct {
-    padding-top: 8px;
+    padding: 5px 0;
 }
 .section {
     margin: 20px 0;
@@ -351,6 +351,38 @@ textarea:focus {
     border-color: #ced4da;
     outline: 0;
     box-shadow: none;
+}
+.header_lienhe {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+.header_lienhe li {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 27px !important;
+    border-bottom: 1px solid #ddd;
+}
+.main-nav .menu_main {
+    height: 70px !important;
+}
+.header_lienhe li:first-child {
+    padding-left: 0px !important;
+}
+.header_lienhe li:last-child {
+    padding-right: 0px !important;
+}
+.header_lienhe li p {
+    text-transform: none;
+    font-weight: 500;
+    margin-bottom: 0 !important;
+}
+.header_lienhe li img {
+    margin-right: 5px;
+}
+.header_lienhe li img:first-child {
+    margin-right: 5px;
 }
 #top-header {
     height: 100px;
@@ -2177,11 +2209,8 @@ textarea:focus {
 .group-store .index-core-group:last-child {
     margin-bottom: 0;
 }
-.group-store .index-core-group:hover img {
-    transform: translateX(10px);
-}
+
 .group-store .index-core-group img {
-    transition: all 500ms ease;
     height: 10rem;
     width: 100%;
 }

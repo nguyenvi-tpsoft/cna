@@ -119,7 +119,21 @@
                             <div class="col-lg-10 col-xl-9 col-md-12">
                                 <div class="index-menu">
                                     <nav class="main-nav">
-                                        <ul class="megamenu">
+                                        <ul class="header_lienhe">
+                                            <li>
+                                                <img src="{{asset('public/frontend/img/icon_map.png')}}" alt="">
+                                                <p>296 Đường 30/4, Xuân Khánh, Ninh Kiều, Cần Thơ</p>
+                                            </li>
+                                            <li>
+                                                <img src="{{asset('public/frontend/img/icon_phone.png')}}" alt="">
+                                                <p>02923.832.213</p>
+                                            </li>
+                                            <li>
+                                                <img src="{{asset('public/frontend/img/icon_mail.png')}}" alt="">
+                                                <p>hoicongchungct@gmail.com</p>
+                                            </li>
+                                        </ul>
+                                        <ul class="megamenu menu_main">
                                             <li class="dropdown">
                                                 <a href="{{URL::to('/trang-chu')}}">
                                                     Trang chủ
