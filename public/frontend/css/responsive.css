@@ -66,13 +66,19 @@
 @media (max-width: 767.98px) {
 }
 @media screen and (max-width: 575.98px) {
+    .page-title-breadcrumbs {
+        margin-top: 72px;
+    }
+    .group-store .index-core-group {
+        margin: 20px 5px;
+    }
     .index-menu {
         display: none;
     }
     .header {
         width: auto;
         height: 72px;
-        margin-top: -97px;
+        margin-top: -72px;
     }
     .logo {
         width: 60%;
