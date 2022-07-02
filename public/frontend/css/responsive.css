@@ -71,7 +71,7 @@
     }
     .header {
         width: auto;
-        height: 6rem;
+        height: 7rem;
     }
     .nivoSlider {
         margin-top: 6rem;
@@ -213,5 +213,8 @@
     }
     .lienhe_div {
         margin-bottom: 15px;
+    }
+    .mg-left-right {
+        margin: 0 5px;
     }
 }

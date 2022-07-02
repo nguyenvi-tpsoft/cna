@@ -2031,7 +2031,7 @@ textarea:focus {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 12px;
+    margin-right: 5px;
 }
 .footer .footer-bottom .about-layout:after {
     content: "";

@@ -323,7 +323,7 @@
             </div>
             <div class="col-lg-12">
                 <div class="copyright" style="text-align: center;">
-                    <p>Copyright by Hội Công chứng viên TP. Cần Thơ - Design by <a href="https://tpsoftct.vn">TPSoft</a> © 2022</p>
+                    <p>Copyright by Hội Công chứng viên TP. Cần Thơ © 2022</p>
                 </div>
             </div>
 
