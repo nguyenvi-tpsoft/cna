@@ -2214,7 +2214,14 @@ textarea:focus {
     height: 10rem;
     width: 100%;
 }
-
+.copyright {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+}
+.copyright p {
+    margin: 0;
+    padding: 10px 0;
+}
 .group-store .item-content {
     margin: 0;
 }

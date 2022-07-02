@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="{{asset('public/frontend/libs/slider-range/css/jslider.css')}}">
     <link rel="stylesheet" href="{{asset('public/frontend/libs/font-cs/cs.css')}}"><!-- Template CSS -->
     <link rel="stylesheet" type="text/css" href="{{asset('public/frontend/css/style.css')}}">
+
     <link rel="stylesheet" type="text/css" href="{{asset('public/frontend/css/responsive.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('public/frontend/css/sweetalert.css')}}">
 
@@ -255,7 +256,9 @@
                                 </div>
                             </div>
                         </div>
+                        <div>
 
+                        </div>
                         <div class="col-lg-3 col-md-6 col-sm-6 mg-bottom-30">
                             <div class="item contact-us">
                                 <div class="item-content">
@@ -277,7 +280,7 @@
                                 </div>
 
                             </div>
-                        </div>`
+                        </div>
 
                         <div class="col-lg-3 col-md-6 col-sm-6 mg-bottom-30">
                             <div class="item contact-us">
@@ -314,7 +317,13 @@
                         </div>
 
 
+
                     </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="copyright" style="text-align: center;">
+                    <p>Copyright by Hội Công chứng viên TP. Cần Thơ - Design by <a href="https://tpsoftct.vn">TPSoft</a> © 2022</p>
                 </div>
             </div>
 
