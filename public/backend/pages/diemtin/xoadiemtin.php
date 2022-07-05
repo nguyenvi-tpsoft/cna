@@ -12,13 +12,10 @@
     $result=$con->query($sql);
         if ( $result==TRUE) {
                         
-            header("location: ../Diemtin/diemtin.php");
+            header("location: ../diemtin/diemtin.php");
         }
         else {
              echo "Error updating record: " .$con->error;
         }       
     //dong ket noi
     $con->close();
-
-        
-?>

@@ -15,8 +15,11 @@
     
    if (!empty($_FILES['file_pl']['name'])){
        
-     $duongdan='../../../upload/phapluat/'.$_FILES['file_pl']['name'];
-        $duongdan1='/phapluat/'.$_FILES['file_pl']['name'];
+    $duoi = explode('.', $_FILES['file_pl']['name']); // tách chuỗi khi gặp dấu .
+    $duoi = $duoi[(count($duoi) - 1)]; //lấy ra đuôi file
+    $phapluat_img = md5($_FILES['file_pl']['name']) . '.' . $duoi;
+    $duongdan = '../../../upload/phapluat/' . $phapluat_img;
+    $duongdan1 = '/phapluat/' . $phapluat_img;
    
     $sql="UPDATE phapluat SET ID_ADMIN='$id_admin', ID_CHUYENMUC_PL='$cm_pl',TIEUDE_PL='$tieude_pl',NOIDUNG_PL='$nd_pl',NGAYDANG_PL='$day', FILE_PL='$duongdan1' where ID_PL='$id_pl'";
     move_uploaded_file($_FILES['file_pl']['tmp_name'],$duongdan);
@@ -33,7 +36,3 @@
         $result=$con->query($sql);
         header("location: ../phapluat/phapluat.php");
         $con->close();
-
-
-  
-?>
