@@ -16,21 +16,37 @@
     <link rel="stylesheet" href="{{asset('public/frontend/libs/slider-range/css/jslider.css')}}">
     <link rel="stylesheet" href="{{asset('public/frontend/libs/font-cs/cs.css')}}"><!-- Template CSS -->
     <link rel="stylesheet" type="text/css" href="{{asset('public/frontend/css/style.css')}}">
-
     <link rel="stylesheet" type="text/css" href="{{asset('public/frontend/css/responsive.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('public/frontend/css/sweetalert.css')}}">
-
     <link rel="stylesheet" href="{{asset('public/frontend/css/toastr.min.css')}}">
-
-
     <link rel="stylesheet" href="{{asset('public/frontend/css/jquery.mCustomScrollbar.min.css')}}">
     <!-- Tweaks for older IEs-->
     <link rel="stylesheet" href="{{asset('public/frontend/css/font-awesome.css')}}">
     <link rel="stylesheet" href="{{asset('public/frontend/css/jquery.fancybox.min.css')}}" media="screen">
-    <link rel="icon" href="{{asset('public/frontend/img/logo.jpg')}}" type="image/gif" />
+    <link rel="icon" href="{{asset('public/frontend/img/logo_item.ico')}}" />
     <title>HỘI CÔNG CHỨNG VIÊN TP. CẦN THƠ</title>
 
+    <meta name="description" content="CanTho Notary Association" />
+    <meta name="keywords" content="công chứng, cần thơ, cna, hội công chứng, pháp luật, văn bản, điều lệ, điểm tin, tin tức" />
 
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="HỘI CÔNG CHỨNG VIÊN TP. CẦN THƠ" />
+    <meta itemprop="description" content="CanTho Notary Association" />
+    <meta itemprop="image" content="{{asset('public/frontend/img/bg_seo.jpg')}}" />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="/" />
+    <meta property="og:site_name" content="cna.org.vn" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="HỘI CÔNG CHỨNG VIÊN TP. CẦN THƠ" />
+    <meta property="og:description" content="CanTho Notary Association" />
+    <meta property="og:image" content="{{asset('public/frontend/img/bg_seo.jpg')}}" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="HỘI CÔNG CHỨNG VIÊN TP. CẦN THƠ" />
+    <meta name="twitter:description" content="CanTho Notary Association" />
+    <meta name="twitter:image" content="{{asset('public/frontend/img/bg_seo.jpg')}}" />
 </head>
 
 
