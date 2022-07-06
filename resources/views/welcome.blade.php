@@ -32,7 +32,7 @@
     <!-- Google / Search Engine Tags -->
     <meta itemprop="name" content="HỘI CÔNG CHỨNG VIÊN TP. CẦN THƠ" />
     <meta itemprop="description" content="CanTho Notary Association" />
-    <meta itemprop="image" content="{{asset('public/frontend/img/bg_seo.jpg')}}" />
+    <meta itemprop="image" content="{{asset('public/frontend/img/logo_seo.jpg')}}" />
 
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="/" />
@@ -40,13 +40,13 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="HỘI CÔNG CHỨNG VIÊN TP. CẦN THƠ" />
     <meta property="og:description" content="CanTho Notary Association" />
-    <meta property="og:image" content="{{asset('public/frontend/img/bg_seo.jpg')}}" />
+    <meta property="og:image" content="{{asset('public/frontend/img/logo_seo.jpg')}}" />
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="HỘI CÔNG CHỨNG VIÊN TP. CẦN THƠ" />
     <meta name="twitter:description" content="CanTho Notary Association" />
-    <meta name="twitter:image" content="{{asset('public/frontend/img/bg_seo.jpg')}}" />
+    <meta name="twitter:image" content="{{asset('public/frontend/img/logo_seo.jpg')}}" />
 </head>
 
 
