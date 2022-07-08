@@ -108,9 +108,9 @@ class HomeController extends Controller
   public function vpcc()
   {
     $lienket = DB::table('lienketwebsite')->get();
-
+    $vpcc_count = DB::table('vanphongcongchung')->get();
     $vpcc = DB::table('vanphongcongchung')->orderby('NGAYTHANHLAP_VPCC', 'asc')->paginate(12);
-    return view('page.HoiVien.VPCC')->with('vpcc', $vpcc)->with('lienket', $lienket);
+    return view('page.HoiVien.VPCC')->with('vpcc', $vpcc)->with('lienket', $lienket)->with('vpcc_count', $vpcc_count);
   }
 
   public function hoivien()

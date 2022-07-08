@@ -31,8 +31,7 @@
         <div class="title text-center">
             <div class="page-title color">
                 <div class="title title-icon">
-                    <h2 class="title-h2">TỔ CHỨC HÀNH NGHỀ CÔNG CHỨNG</h2>
-
+                    <h2>TỔ CHỨC HÀNH NGHỀ CÔNG CHỨNG ({{count($vpcc_count)}})</h2>
                 </div>
             </div>
         </div>
@@ -51,7 +50,7 @@
                             <img src="{{asset('public/frontend/img/logo_item.png')}}" alt="img">
                         </div>
                         <div class="content-right">
-                            <a href="{{URL::to('chi-tiet-vpcc/'.$vp->ID_VPCC)}}">Văn phòng công chứng
+                            <a style="color:black" href="{{URL::to('chi-tiet-vpcc/'.$vp->ID_VPCC)}}">
                                 {{$vp->TEN_VPCC}}</a>
                         </div>
                     </div>

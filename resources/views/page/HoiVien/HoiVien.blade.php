@@ -25,30 +25,36 @@
 
 
 <div class="section about">
-    <div class="container">
+    <div class="section_hoivien">
         <div class="title text-center">
             <div class="page-title color">
                 <div class="title title-icon">
-                    <h2 class="title-h2">HỘI VIÊN</h2>
+                    <h2 class="title-h2">HỘI VIÊN ({{count($hoivien)}})</h2>
 
                 </div>
             </div>
         </div>
-        <div class="content-about text-center m-top">
-            @foreach($hoivien as $key=>$hv)
-            <div class="item">
-                <div class="item-img">
-                    <a href="#" title=""><img class="img-fluid" src="{{URL::to('public/upload'.$hv->ANH_HV)}}" alt="img">
+        <div class="content-about text-center ">
+            <div class="row">
+                @foreach($hoivien as $key=>$hv)
+                <div class="col-sm-4 col-12">
+                    <div class="item">
+                        <!-- <div class="item-img">
+                    <a href="#s" title=""><img class="img-fluid" src="{{URL::to('public/upload'.$hv->ANH_HV)}}" alt="img">
                     </a>
-                </div>
-                <div class="item-content">
-                    <div class="sub-title">
-                        <h3>{{$hv->TEN_HV}}</h3>
-                        <h3>{{$hv->VANPHONG_HV}}</h3>
+                </div> -->
+                        <div class="item-content">
+                            <div class="sub-title">
+                                <h3>{{$hv->TEN_HV}}</h3>
+                                <h3>{{$hv->VANPHONG_HV}}</h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                @endforeach
             </div>
-            @endforeach
+
         </div>
     </div>
 </div>

@@ -9,6 +9,9 @@
         margin-top: 6rem;
         height: 380px;
     }
+    .section_hoivien {
+        margin: 0 50px;
+    }
 }
 @media (max-width: 991.98px) {
     #top-header .main-header .main-nav > ul > li {
@@ -66,6 +69,18 @@
 @media (max-width: 767.98px) {
 }
 @media screen and (max-width: 575.98px) {
+    .item-content {
+        padding: 10px 0;
+    }
+    .section_hoivien {
+        margin: 0 10px;
+    }
+    .chitiet_vpcc_img {
+        margin-bottom: 10px;
+    }
+    .chitiet_vpcc_img img {
+        width: 100%;
+    }
     .page-title-breadcrumbs {
         margin-top: 72px;
     }
@@ -200,7 +215,7 @@
         padding-top: 10px;
     }
     .content-about .item {
-        margin: 20px 0px;
+        margin: 10px 0px;
         width: 100%;
     }
     .feature-products .item {

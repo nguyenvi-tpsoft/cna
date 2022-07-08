@@ -28,37 +28,27 @@
 
 <div class="section about">
     <div class="container">
-
         <div class="section main-contact-us">
-            <div class="section container">
+            <div class="section">
                 <div class="row">
                     @foreach($vpcc as $key=>$vp)
                     <div class="col-md-7 col-sm-12 m-b-30">
-                        <img src="{{URL::to('public/upload/'.$vp->ANH_VPCC)}}" style="width: 35rem; height: 25rem">
+                        <div class="chitiet_vpcc_img">
+                            <img style="border-radius: 5px" src="{{URL::to('public/upload/'.$vp->ANH_VPCC)}}">
+                        </div>
+
                     </div>
                     <div class="col-md-5 col-sm-12">
-
-                        <div class="page-title color m-bottom-2">
+                        <div class="page-title color">
                             <div class="title title-icon">
-                                <h2 style="background-repeat: no-repeat;
-                                    background-position: center bottom;
-                                    background-size: auto;
-                                    padding-bottom: 10px;
-                                    color: #b36b00;
-                                    font-weight: 600;
-                                    font-size: 30px;
-                                    font-family: UTM-COPPERPLATE;
-                                     ">{{$vp->TEN_VPCC}} </h2>
+                                <h2 style="margin: 0;">{{$vp->TEN_VPCC}} </h2>
                             </div>
                         </div>
 
                         <div class="header-contact" style="color: black">
-
                             <div class="col padding-0">
                                 <div class="item d-flex">
-
                                     <div class="contact-content">
-
                                         <p style=" font-size: 20px; font-family: 'Flaticon';"> {!!$vp->THONGTIN_VPCC!!}</p>
                                     </div>
                                 </div>
@@ -97,7 +87,7 @@
                                 <img src="{{asset('public/frontend/img/logo_item.png')}}" alt="img">
                             </div>
                             <div class="content-right" style="color: black">
-                                <a href="{{URL::to('chi-tiet-vpcc/'.$vp->ID_VPCC)}}" style="font-family: emoji; color: black; font-size: 18px">Văn phòng công chứng
+                                <a style="color:black" href="{{URL::to('chi-tiet-vpcc/'.$vp->ID_VPCC)}}" style="font-family: emoji; color: black; font-size: 18px">
                                     {{$vp->TEN_VPCC}}</a>
                             </div>
                         </div>

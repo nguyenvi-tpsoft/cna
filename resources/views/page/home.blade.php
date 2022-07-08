@@ -34,12 +34,12 @@
                         <div class="item-img img-left">
                             @foreach($diemtin1 as $key=>$dt)
                             <a href="{{URL::to('chi-tiet-diem-tin/'.$dt->ID_DT)}}" title="">
-                                <img style="width: 100%" src="{{URL::to('public/upload/'.$dt->HINHANH_DT)}}" alt="img">
+                                <img style="border-radius: 5px;width: 100%;" src="{{URL::to('public/upload/'.$dt->HINHANH_DT)}}" alt="img">
                             </a>
                             <div class="item-content">
                                 <div class="sub-title">
                                     <a href="{{URL::to('chi-tiet-diem-tin/'.$dt->ID_DT)}}">
-                                        <h4 class="no-ater">{{$dt->TIEUDE_DT}}</h4>
+                                        <h4 class="no-ater main">{{$dt->TIEUDE_DT}}</h4>
                                     </a>
                                 </div>
                             </div>
@@ -58,7 +58,7 @@
                                         <div class="index-core-group flex-center clearfix  align-items-center">
                                             <div class="item-img float-left">
                                                 <a href="{{URL::to('chi-tiet-diem-tin/'.$dt->ID_DT)}}" title="">
-                                                    <img class="img-fluid" src="{{URL::to('public/upload/'.$dt->HINHANH_DT)}}">
+                                                    <img style="border-radius: 5px;" class="img-fluid" src="{{URL::to('public/upload/'.$dt->HINHANH_DT)}}">
                                                 </a>
                                             </div>
                                             <div class="item-content">
@@ -117,7 +117,7 @@
 
                                             <div class="index-core-group flex-center clearfix align-items-center">
                                                 <div class="item-img float-left">
-                                                    <a href="{{URL::to('chi-tiet-van-ban/'.$vb->ID_VB)}}" title=""><img class="img-fluid" src="{{URL::to('public/upload/'.$vb->HINHANH_VB)}}"></a>
+                                                    <a href="{{URL::to('chi-tiet-van-ban/'.$vb->ID_VB)}}" title=""><img style="border-radius: 5px" class="img-fluid" src="{{URL::to('public/upload/'.$vb->HINHANH_VB)}}"></a>
                                                 </div>
                                                 <div class="item-content" style="float: inherit">
                                                     <div class="sub-title">
@@ -188,7 +188,7 @@
         <div class="container">
             <div class="title text-center">
                 <div class="page-title color">
-                    <h2>TỔ CHỨC HÀNH NGHỀ CÔNG CHỨNG</h2>
+                    <h2>TỔ CHỨC HÀNH NGHỀ CÔNG CHỨNG ({{count($vpcc)}})</h2>
                 </div>
             </div>
 
@@ -207,7 +207,7 @@
                                         <img src="{{asset('public/frontend/img/logo_item.png')}}" alt="img">
                                     </div>
                                     <div class="content-right">
-                                        <a href="{{URL::to('chi-tiet-vpcc/'.$vp->ID_VPCC)}}">Văn phòng công chứng
+                                        <a style="color:black" href="{{URL::to('chi-tiet-vpcc/'.$vp->ID_VPCC)}}">
                                             {{$vp->TEN_VPCC}}</a>
                                     </div>
                                 </div>
