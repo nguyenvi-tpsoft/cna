@@ -926,10 +926,10 @@ textarea:focus {
 } /** * 1.2. Body */
 .button-main {
     font-size: 14px !important;
-    padding: 6px 32px;
+    padding: 0px 20px;
     font-weight: 500;
     border-width: 1px;
-    line-height: 48px;
+    line-height: 45px;
     color: #fff;
     border-color: #91ad41;
     background-color: #91ad41;
@@ -1191,6 +1191,10 @@ textarea:focus {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+}
+.ttchncc_item.home {
+    width: 100%;
+    margin: 10px 0;
 }
 .generalship .inner {
     padding-top: 70px;
@@ -5403,6 +5407,9 @@ textarea:focus {
 }
 .feature-products.tab-content {
     margin: 20px 0;
+}
+.feature-products.tab-content.home {
+    margin: 0;
 }
 .coupon-wrap {
     left: 0;

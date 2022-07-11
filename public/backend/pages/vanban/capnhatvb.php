@@ -29,11 +29,11 @@ if (!empty($_FILES['file_vb']['name'])) {
         $anh_vb = md5($_FILES['anh_vb']['name']) . '.' . $duoi;
 
         $duongdan2 = '../../../upload/vanban/' . $anh_vb;
-        $duongdan2 = '/vanban/' . $anh_vb;
+        $duongdan2_1 = '/vanban/' . $anh_vb;
         move_uploaded_file($_FILES['anh_vb']['tmp_name'], $duongdan2);
 
 
-        $sql = "UPDATE vanban SET ID_ADMIN='$id_admin', ID_CHUYENMUC_VB='$cm_vb',TIEUDE_VB='$tieude_vb',NOIDUNG_VB='$nd_vb',NGAYDANG_VB='$day', FILE_VB='$duongdan1',HINHANH_VB='$duongdan2' where ID_VB='$id_vb'";
+        $sql = "UPDATE vanban SET ID_ADMIN='$id_admin', ID_CHUYENMUC_VB='$cm_vb',TIEUDE_VB='$tieude_vb',NOIDUNG_VB='$nd_vb',NGAYDANG_VB='$day', FILE_VB='$duongdan1',HINHANH_VB='$duongdan2_1' where ID_VB='$id_vb'";
         move_uploaded_file($_FILES['file_vb']['tmp_name'], $duongdan);
         move_uploaded_file($_FILES['anh_vb']['tmp_name'], $duongdan);
         echo $sql;
@@ -60,9 +60,9 @@ if (!empty($_FILES['file_vb']['name'])) {
         $anh_vb = md5($_FILES['anh_vb']['name']) . '.' . $duoi;
 
         $duongdan2 = '../../../upload/vanban/' . $anh_vb;
-        $duongdan2 = '/vanban/' . $anh_vb;
+        $duongdan2_1 = '/vanban/' . $anh_vb;
         move_uploaded_file($_FILES['anh_vb']['tmp_name'], $duongdan2);
-        $sql = "UPDATE vanban SET ID_ADMIN='$id_admin', ID_CHUYENMUC_VB='$cm_vb',TIEUDE_VB='$tieude_vb',NOIDUNG_VB='$nd_vb',NGAYDANG_VB='$day', HINHANH_VB='$duongdan21' where ID_VB='$id_vb'";
+        $sql = "UPDATE vanban SET ID_ADMIN='$id_admin', ID_CHUYENMUC_VB='$cm_vb',TIEUDE_VB='$tieude_vb',NOIDUNG_VB='$nd_vb',NGAYDANG_VB='$day', HINHANH_VB='$duongdan2_1' where ID_VB='$id_vb'";
         echo $sql;
     } else {
 

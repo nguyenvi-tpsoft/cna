@@ -34,7 +34,7 @@
                 </div>
             </div>
         </div>
-        <div class="content-about text-center ">
+        <div class="content-about text-center container">
             <div class="row">
                 @foreach($hoivien as $key=>$hv)
                 <div class="col-sm-4 col-12">

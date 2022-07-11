@@ -18,7 +18,7 @@ $duoi = explode('.', $_FILES['anh_vb']['name']); // tách chuỗi khi gặp dấ
 $duoi = $duoi[(count($duoi) - 1)]; //lấy ra đuôi file
 $anh_vb = md5($_FILES['anh_vb']['name']) . '.' . $duoi;
 
-$duongdan2 = '../../../upload/vanban/' . $anh_vb;
+$duongdan2_1 = '../../../upload/vanban/' . $anh_vb;
 $duongdan2 = '/vanban/' . $anh_vb;
 move_uploaded_file($_FILES['anh_vb']['tmp_name'], $duongdan2);
 
@@ -31,7 +31,7 @@ session_start();
 include '../../connectsql.php';
 $id_admin = $_SESSION["id_admin"];
 //Viet cau truy van Sql
-$sql = "INSERT INTO vanban ( ID_CHUYENMUC_VB, ID_ADMIN, TIEUDE_VB, NOIDUNG_VB, FILE_VB,HINHANH_VB, NGAYDANG_VB) VALUES ( '$cm_vb','$id_admin','$tieude_vb','$replace_nd','$duongdan1','$duongdan2','$day') ";
+$sql = "INSERT INTO vanban ( ID_CHUYENMUC_VB, ID_ADMIN, TIEUDE_VB, NOIDUNG_VB, FILE_VB,HINHANH_VB, NGAYDANG_VB) VALUES ( '$cm_vb','$id_admin','$tieude_vb','$replace_nd','$duongdan1','$duongdan2_1','$day') ";
 //echo $sql;
 //thưc hien truy van
 $result = $con->query($sql);

@@ -85,23 +85,21 @@
                 <div class="product">
                     <div class="item">
                         @foreach($phapluat as $key=>$pl)
-                        <div class="row" style="margin-bottom: 50px">
+                        <div class="" style="margin-bottom: 10px">
 
                             <div>
-                                <div class="content-right" style="color: black">
+                                <div class="content-right" style="min-width: 100%; color: black;border-bottom: 1px solid #ddd;padding: 15px 0;">
                                     <a href="{{URL::to('chi-tiet-phap-luat/'.$pl->ID_PL)}}" style="font-family: emoji; color: black; font-size: 25px">
                                         {{$pl->TIEUDE_PL}}</a>
 
                                     <div class="price font-600 color-default" href="{{URL::to('chi-tiet-phap-luat/'.$pl->ID_PL)}}">
-                                        <span style="color: #9f6605">{{$pl->NGAYDANG_PL}}</span>
+                                        <span style="color: #9f6605">{{date('d/m/Y',strtotime($pl->NGAYDANG_PL))}}</span>
                                     </div>
-                                    <div class="button d-flex align-items-center" style="margin-top: 3rem">
-                                        <a class="btn view button-main" href="{{URL::to('chi-tiet-phap-luat/'.$pl->ID_PL)}}" style="background-color: rgba(0,0,0,0.02);
-                                                        box-shadow: 1px 1px 3px 0px rgb(0 0 0 / 20%), 0 1px 0 rgb(0 0 0 / 7%), inset 0 0 0 1px rgb(0 0 0 / 5%); color: #9f6605;
-                                                            border-color: rgba(0,0,0,0.02)">
-                                            Xem thêm
-                                            <i class="fa fa-chevron-double-left"></i></a>
-                                    </div>
+                                    <!-- <div class="button d-flex align-items-center"> -->
+                                    <a class="btn view button-main" href="{{URL::to('chi-tiet-phap-luat/'.$pl->ID_PL)}}">
+                                        Xem thêm
+                                        <i class="fa fa-chevron-double-left"></i></a>
+                                    <!-- </div> -->
                                 </div>
                             </div>
                         </div>

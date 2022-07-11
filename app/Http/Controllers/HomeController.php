@@ -29,12 +29,17 @@ class HomeController extends Controller
     $vanban = DB::table('vanban')->orderby('ID_VB', 'desc')->limit(3)->get();
     $phapluat = DB::table('phapluat')->orderby('ID_PL', 'desc')->limit(3)->get();
 
-    // $vpcc=DB::table('vanphongcongchung')
-    // ->orderby('ID_VPCC','asc')
-    // ->get();
+
 
     $vpcc = DB::table('vanphongcongchung')
       ->orderby('NGAYTHANHLAP_VPCC', 'asc')
+      ->get();
+    $vpcc_top9 = DB::table('vanphongcongchung')
+      ->orderby('NGAYTHANHLAP_VPCC', 'asc')->limit(9)
+      ->get();
+    $hoivien = DB::table('hoivien')->get();
+    $hoivien_top9 = DB::table('hoivien')
+      ->orderby('ID_HV', 'asc')->limit(9)
       ->get();
 
     $lienket = DB::table('lienketwebsite')->get();
@@ -42,7 +47,7 @@ class HomeController extends Controller
 
     return view('page.home')->with('diemtin', $diemtin)->with('diemtin1', $diemtin1)
       ->with('phapluat', $phapluat)->with('vanban', $vanban)
-      ->with('vpcc', $vpcc)->with('lienket', $lienket);
+      ->with('vpcc', $vpcc)->with('vpcc_top9', $vpcc_top9)->with('hoivien_all', $hoivien)->with('hoivien_top9', $hoivien_top9)->with('lienket', $lienket);
   }
 
   public function gioithieuchung()

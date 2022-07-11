@@ -184,25 +184,51 @@
 
 
 <section>
+    <div class="" style="border-bottom: 1px solid #ddd; padding-bottom: 10px;text-align: center;">
+        <div class="title text-center">
+            <div class="page-title color">
+                <div class="title title-icon">
+                    <h2 class="title-h2">HỘI VIÊN </h2>
+                </div>
+            </div>
+        </div>
+        <div class="content-about text-center container">
+            <div class="row">
+                @foreach($hoivien_top9 as $key=>$hv)
+                <div class="col-sm-4 col-12">
+                    <div class="item">
+                        <div class="item-content">
+                            <div class="sub-title">
+                                <h3>{{$hv->TEN_HV}}</h3>
+                                <h3>{{$hv->VANPHONG_HV}}</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                @endforeach
+            </div>
+
+        </div>
+        <a style="color:black" href="{{URL::to('/danh-sach-hoi-vien')}}">Xem tất cả ({{count($hoivien_all)}})</a>
+    </div>
     <div class="section about">
         <div class="container">
             <div class="title text-center">
                 <div class="page-title color">
-                    <h2>TỔ CHỨC HÀNH NGHỀ CÔNG CHỨNG ({{count($vpcc)}})</h2>
+                    <h2>TỔ CHỨC HÀNH NGHỀ CÔNG CHỨNG </h2>
                 </div>
             </div>
 
 
-            <div class="section blog-news">
-                <div class="container">
+            <div class="section blog-news" style="text-align: center;">
 
-                    <div class="feature-products tab-content">
-
-                        <div class="block-content">
-                            <div style="display: flex; flex-wrap: wrap;">
-                                @foreach($vpcc as $key=>$vp)
-
-                                <div class="row ttchncc_item" onclick='location.href="{{URL::to("chi-tiet-vpcc/".$vp->ID_VPCC)}}"'>
+                <div class="feature-products tab-content home">
+                    <div class="block-content">
+                        <div class="row">
+                            @foreach($vpcc_top9 as $key=>$vp)
+                            <div class="col-sm-4 col-12">
+                                <div class="row ttchncc_item home" onclick='location.href="{{URL::to("chi-tiet-vpcc/".$vp->ID_VPCC)}}"'>
                                     <div class="product-image-container">
                                         <img src="{{asset('public/frontend/img/logo_item.png')}}" alt="img">
                                     </div>
@@ -211,24 +237,21 @@
                                             {{$vp->TEN_VPCC}}</a>
                                     </div>
                                 </div>
-
-
-                                @endforeach
-
                             </div>
-
+                            @endforeach
 
                         </div>
 
+
                     </div>
-
-
                 </div>
+                <a style="color:black" href="{{URL::to('/danh-sach-vpcc')}}">Xem tất cả ({{count($vpcc)}})</a>
             </div>
 
 
         </div>
     </div>
+
 
 
 </section>

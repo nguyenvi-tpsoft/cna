@@ -32,84 +32,68 @@
 <section>
     <div class="section about">
         <div class="container">
-            <div style="margin-right: 18rem">
-                <div class="page-title color">
+            <div>
+                <div class="page-title diemtin">
 
-                        @foreach($phapluat as $key=>$pl)
-                        <h2 style="background-repeat: no-repeat;
-                                    background-position: center bottom;
-                                    background-size: auto;
-                                    padding-bottom: 10px;
-                                    margin-bottom: 0;
-                                    color: #b36b00;
-                                    font-weight: 600;
-                                    font-size: 30px;
-                                    font-family: UTM-COPPERPLATE;">{{$pl->TIEUDE_PL}}
+                    @foreach($phapluat as $key=>$pl)
+                    <h2>{{$pl->TIEUDE_PL}}
 
-                                </h2>
+                    </h2>
 
-                        <h3 style=" color: #b36b00;
-                                    font-weight: 400;
-                                    font-size: 25px;
-                                    font-family: UTM-COPPERPLATE;">{{$pl->NGAYDANG_PL}}</h3>
-                        @endforeach
-
-                        <br>
-                    {{-- </div> --}}
+                    <h3>{{date('d/m/Y',strtotime($pl->NGAYDANG_PL))}}</h3>
+                    @endforeach
                 </div>
             </div>
 
 
             <div class="section wrap-product-categories" style="margin-bottom: 1px; color: black">
+                <div class="block-content m-top">
+                    <div class="row">
+                        <div class="col-md-9 col-sm-12 m-b-50">
+                            <div class="">
+                                @foreach($phapluat as $key=>$pl)
 
-                 <div class="block-content m-top">
-                        <div class="row">
-                            <div class="col-md-9 col-sm-12 m-b-50">
-                                <div class="row" style="margin-right: 3rem">
-                                    @foreach($phapluat as $key=>$pl)
+                                <p>{!!$pl->NOIDUNG_PL!!}</p>
 
-                                     <p>{!!$pl->NOIDUNG_PL!!}</p>
-
-                                     <p style="color: #b36b00; font-size: 16px">Download: <a href="{{asset('public/upload'.$pl->FILE_PL)}}" style="color: #0059b3"> tài liệu</a></p>
-
-                                     @endforeach
-                                </div>
+                                <div style="color: #b36b00; font-size: 16px">Download: <a href="{{asset('public/upload'.$pl->FILE_PL)}}" style="color: #0059b3"> tài liệu</a></div>
+                                @endforeach
                             </div>
-                            <div class="col-md-3 col-sm-12">
-                                <div class="sidebar sidebar-collection">
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <div class="sidebar sidebar-collection">
 
-                                    <!-- Latest Posts -->
-                                    <div class="sidebar-block blogs-recent">
-                                        <div class="sub-title" style="width: 18rem">
-                                            <h3>Pháp luật liên quan</h4>
-                                        </div>
-                                        <div class="recent-article">
-                                            <div class="ra-item-inner">
-                                                @foreach($PL_lienquan as $key=>$lienquan)
-                                                <div class="article-item clearfix ">
+                                <!-- Latest Posts -->
+                                <div class="sidebar-block blogs-recent">
+                                    <div class="sub-title" style="width: 18rem">
+                                        <h3>Pháp luật liên quan</h4>
+                                    </div>
+                                    <div class="recent-article">
+                                        <div class="ra-item-inner">
+                                            @foreach($PL_lienquan as $key=>$lienquan)
+                                            <div class="article-item clearfix ">
 
-                                                    <div class="articleinfo-group" style="width: 18rem">
-                                                        <div class="article-title">
-                                                            <h2 class="article-name"><a href="blog-detail.html">{{$lienquan->TIEUDE_PL}}</a></h2>
-                                                        </div>
-                                                        <ul class="article-info list-inline">
-                                                            <li class="article-date">{{$lienquan->NGAYDANG_PL}}</li>
-                                                        </ul>
+                                                <div class="articleinfo-group" style="width: 18rem">
+                                                    <div class="article-title">
+                                                        <h2 class="article-name"><a href="blog-detail.html">{{$lienquan->TIEUDE_PL}}</a></h2>
                                                     </div>
+                                                    <ul class="article-info list-inline">
+                                                        <li class="article-date">{{$lienquan->NGAYDANG_PL}}</li>
+                                                    </ul>
                                                 </div>
-
-                                                @endforeach
-
                                             </div>
+
+                                            @endforeach
+
                                         </div>
                                     </div>
-
                                 </div>
+
                             </div>
                         </div>
                     </div>
+                </div>
 
-             </div>
+            </div>
 
         </div>
     </div>
