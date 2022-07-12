@@ -224,7 +224,7 @@
                       <tbody>
                         <tr>
                           <th>Tiêu đề điểm tin</th>
-                          <td><input type="text" name="tieudediemtin" value=""></td>
+                          <td><input style="width: 100%;" type="text" name="tieudediemtin" value=""></td>
                         </tr>
                         <tr>
                           <th>Chuyên mục điểm tin</th>

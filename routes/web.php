@@ -9,10 +9,11 @@ use Illuminate\Support\Facades\Route;
 |
 |*/
 
-
+$a = url()->current();
 // KHACH HANG
 Route::get('/', 'App\Http\Controllers\HomeController@index');
-
+// lien diem tin
+Route::get('diem-tin', 'App\Http\Controllers\HomeController@diemtin');
 // trang khach hang - trang chu (frontend)
 Route::get('/trang-chu', 'App\Http\Controllers\HomeController@index');
 
@@ -31,8 +32,7 @@ Route::get('dieu-le', 'App\Http\Controllers\HomeController@dieule');
 // lien he
 Route::get('lien-he', 'App\Http\Controllers\HomeController@lienhe');
 
-// lien diem tin
-Route::get('diem-tin', 'App\Http\Controllers\HomeController@diemtin');
+
 
 //
 Route::get('chuyen-muc-diem-tin/{ID_CHUYENMUC_DT}', 'App\Http\Controllers\DiemTinController@show_ChuyenMucDT');
