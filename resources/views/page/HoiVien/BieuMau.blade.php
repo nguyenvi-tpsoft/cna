@@ -62,7 +62,7 @@
                                 <span style="color: #9f6605">{{date('d/m/Y',strtotime($bm->NGAYDANG_BMCCV))}}</span>
                             </div>
                             <div class="button d-flex align-items-center">
-                                <a class="btn view button-main diemtin" href="{{asset('public/upload'.$bm->FILE_BMCCV)}}">
+                                <a class="btn view button-main" href="{{asset('public/upload'.$bm->FILE_BMCCV)}}">
                                     Tải xuống
                                     <i class="fa fa-chevron-double-left"></i></a>
                             </div>

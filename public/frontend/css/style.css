@@ -151,7 +151,7 @@ ul {
 ul li {
     list-style: none;
 }
-.content-right.diemtin a {
+.content-right.diemtin .title {
     font-size: 22px;
     font-family: "FontAwesome";
     color: black;
@@ -334,7 +334,9 @@ input.search-query.form-control {
     outline: none;
 }
 .content-right.diemtin.product {
-    margin: 30px 0;
+    margin: 15px 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
 }
 .content-right.diemtin.product p {
     font-size: 20px;

@@ -47,14 +47,14 @@
                             </div>
                             <div class="col-md-7 col-sm-12">
                                 <div class="content-right diemtin" style="color: black">
-                                    <a href="{{URL::to('chi-tiet-diem-tin/'.$dt->ID_DT)}}">
+                                    <a class="title" href="{{URL::to('chi-tiet-diem-tin/'.$dt->ID_DT)}}">
                                         {{$dt->TIEUDE_DT}}</a>
 
                                     <div class="price font-600 color-default" href="{{URL::to('chi-tiet-diem-tin/'.$dt->ID_DT)}}">
                                         <span style="color: #9f6605">{{date('d/m/Y',strtotime($dt->NGAYDANG_DT))}}</span>
                                     </div>
                                     <div class="button d-flex align-items-center">
-                                        <a class="btn view button-main diemtin" href="{{URL::to('chi-tiet-diem-tin/'.$dt->ID_DT)}}">
+                                        <a class="btn view button-main" href="{{URL::to('chi-tiet-diem-tin/'.$dt->ID_DT)}}">
                                             Xem thêm
                                             <i class="fa fa-chevron-double-left"></i></a>
                                     </div>
