@@ -61,11 +61,9 @@
                                 <div class="logo_vpct">
                                     <div id="menu_mb_control" class="menu_mb_control">
                                         <img src="{{asset('public/frontend/img/list.png')}}" alt="">
-
                                     </div>
                                     <a href="{{URL::to('/trang-chu')}}">
                                         <img class="logo" src="{{asset('public/frontend/img/logo.png')}}" alt="">
-
                                     </a>
                                     <div id="index_menu_mb" class="index_menu_mb">
                                         <ul>
@@ -152,50 +150,52 @@
                                         </ul>
                                         <ul class="megamenu menu_main">
                                             <li class="dropdown">
-                                                <a href="{{URL::to('/trang-chu')}}">
+                                                <a class="{{isset($active_home)?$active_home:''}}" href="{{URL::to('/trang-chu')}}">
                                                     Trang chủ
                                                 </a>
                                             </li>
                                             <li class="dropdown ">
-                                                <a href="#">Giới thiệu
+                                                <a class="{{isset($active_gioithieu)?$active_gioithieu:''}}" href="#">Giới thiệu
                                                     <i class="fa fa-angle-down d-xs-none"></i></a>
                                                 <div class="dropdown-menu">
                                                     <ul>
-                                                        <li><a href="{{URL::to('/gioi-thieu-chung')}}">Giới thiệu chung</a></li>
-                                                        <li><a href="{{URL::to('/so-do-to-chuc')}}">Tổ chức bộ máy</a></li>
-                                                        <li><a href="{{URL::to('quyet-dinh-thanh-lap')}}">Quyết định thành lập</a></li>
-                                                        <li><a href="{{URL::to('dieu-le')}}">Điều lệ</a></li>
+                                                        <li><a class="{{isset($active_gioithieuchung)?$active_gioithieuchung:''}}" href="{{URL::to('/gioi-thieu-chung')}}">Giới thiệu chung</a></li>
+                                                        <li><a class="{{isset($active_sodo)?$active_sodo:''}}" href="{{URL::to('/so-do-to-chuc')}}">Tổ chức bộ máy</a></li>
+                                                        <li><a class="{{isset($active_quyetdinh)?$active_quyetdinh:''}}" href="{{URL::to('quyet-dinh-thanh-lap')}}">Quyết định thành lập</a></li>
+                                                        <li><a class="{{isset($active_dieule)?$active_dieule:''}}" href="{{URL::to('dieu-le')}}">Điều lệ</a></li>
                                                     </ul>
                                                 </div>
 
 
                                             </li>
-                                            <li class="dropdown blog-fullwidth"><a href="{{URL::to('diem-tin')}}">Điểm tin</a>
+                                            <li class="dropdown blog-fullwidth">
+                                                <a class="{{isset($active_diemtin)?$active_diemtin:''}}" href="{{URL::to('diem-tin')}}">Điểm tin</a>
                                             </li>
 
-                                            <li class="dropdown"><a href="{{URL::to('van-ban')}}">Văn bản </a>
+                                            <li class="dropdown"><a class="{{isset($active_vanban)?$active_vanban:''}}" href="{{URL::to('van-ban')}}">Văn bản </a>
                                             </li>
 
 
                                             <li class="dropdown ">
-                                                <a href="#">Hội viên
+                                                <a class="{{isset($active_hoivien_main)?$active_hoivien_main:''}}" href="#">Hội viên
                                                     <i class="fa fa-angle-down d-xs-none"></i></a>
                                                 <div class="dropdown-menu">
                                                     <ul>
-                                                        <li><a href="{{URL::to('/danh-sach-hoi-vien')}}">Danh sách hội viên</a></li>
-                                                        <li><a href="{{URL::to('/danh-sach-vpcc')}}">Danh sách TCHNCC</a></li>
-                                                        <li><a href="{{URL::to('bieu-mau-ccv')}}">Biểu mẫu CCV</a></li>
+                                                        <li><a class="{{isset($active_hoivien)?$active_hoivien:''}}" href="{{URL::to('/danh-sach-hoi-vien')}}">Danh sách hội viên</a></li>
+                                                        <li><a class="{{isset($active_vpcc)?$active_vpcc:''}}" href="{{URL::to('/danh-sach-vpcc')}}">Danh sách TCHNCC</a></li>
+                                                        <li><a class="{{isset($active_bieumau)?$active_bieumau:''}}" href="{{URL::to('bieu-mau-ccv')}}">Biểu mẫu CCV</a></li>
                                                     </ul>
                                                 </div>
 
 
                                             </li>
 
-                                            <li class="dropdown"><a href="{{URL::to('/thu-vien')}}">Thư viện </a>
-
+                                            <li class="dropdown">
+                                                <a class="{{isset($active_thuvien)?$active_thuvien:''}}" href="{{URL::to('/thu-vien')}}">Thư viện </a>
                                             </li>
 
-                                            <li class="dropdown"><a href="{{URL::to('lien-he')}}">Liên Hệ</a>
+                                            <li class="dropdown">
+                                                <a class="{{isset($active_lienhe)?$active_lienhe:''}}" href="{{URL::to('lien-he')}}">Liên Hệ</a>
 
                                             </li>
                                             <li>
@@ -376,7 +376,7 @@
     <script src="{{asset('public/frontend/js/toastr.min.js')}}"></script>
 
 
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
     <script>
         $("#menu_mb_control").click(function() {
             $("#index_menu_mb").toggle();

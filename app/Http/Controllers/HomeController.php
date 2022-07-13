@@ -17,12 +17,10 @@ use Mail;
 class HomeController extends Controller
 {
 
-
-
-
   // trang chu
   public function index()
   {
+    $active_home = 'menu_active';
     $diemtin1 = DB::table('diemtin')->orderby('ID_DT', 'desc')->limit(1)->get();
     $diemtin = DB::table('diemtin')->orderby('ID_DT', 'desc')->offset(1)->limit(3)->get();
 
@@ -47,58 +45,69 @@ class HomeController extends Controller
 
     return view('page.home')->with('diemtin', $diemtin)->with('diemtin1', $diemtin1)
       ->with('phapluat', $phapluat)->with('vanban', $vanban)
-      ->with('vpcc', $vpcc)->with('vpcc_top9', $vpcc_top9)->with('hoivien_all', $hoivien)->with('hoivien_top9', $hoivien_top9)->with('lienket', $lienket);
+      ->with('vpcc', $vpcc)->with('vpcc_top9', $vpcc_top9)->with('hoivien_all', $hoivien)->with('hoivien_top9', $hoivien_top9)->with('lienket', $lienket)->with('active_home', $active_home);
   }
 
   public function gioithieuchung()
   {
+    $active_gioithieu = 'menu_active';
+    $active_gioithieuchung = 'menu_active';
     $lienket = DB::table('lienketwebsite')->get();
-    return view('page.GioiThieu.GioiThieuChung')->with('lienket', $lienket);
+    return view('page.GioiThieu.GioiThieuChung')->with('lienket', $lienket)->with('active_gioithieu', $active_gioithieu)->with('active_gioithieuchung', $active_gioithieuchung);
   }
 
   public function sodo()
   {
+    $active_gioithieu = 'menu_active';
+    $active_sodo = 'menu_active';
     $lienket = DB::table('lienketwebsite')->get();
-    return view('page.GioiThieu.SoDoToChuc')->with('lienket', $lienket);
+    return view('page.GioiThieu.SoDoToChuc')->with('lienket', $lienket)->with('active_gioithieu', $active_gioithieu)->with('active_sodo', $active_sodo);
   }
 
   public function quyetdinh()
   {
+    $active_gioithieu = 'menu_active';
+    $active_quyetdinh = 'menu_active';
     $lienket = DB::table('lienketwebsite')->get();
-    return view('page.GioiThieu.QuyetDinhThanhLap')->with('lienket', $lienket);
+    return view('page.GioiThieu.QuyetDinhThanhLap')->with('lienket', $lienket)->with('active_gioithieu', $active_gioithieu)->with('active_quyetdinh', $active_quyetdinh);
   }
 
   public function dieule()
   {
+    $active_gioithieu = 'menu_active';
+    $active_dieule = 'menu_active';
     $lienket = DB::table('lienketwebsite')->get();
 
-    return view('page.GioiThieu.DieuLe')->with('lienket', $lienket);
+    return view('page.GioiThieu.DieuLe')->with('lienket', $lienket)->with('active_gioithieu', $active_gioithieu)->with('active_dieule', $active_dieule);
   }
 
   public function lienhe()
   {
+    $active_lienhe = 'menu_active';
     $lienket = DB::table('lienketwebsite')->get();
-    return view('page.LienHe.LienHe')->with('lienket', $lienket);
+    return view('page.LienHe.LienHe')->with('lienket', $lienket)->with('active_lienhe', $active_lienhe);
   }
 
   public function diemtin()
   {
+    $active_diemtin = 'menu_active';
     $lienket = DB::table('lienketwebsite')->get();
     $chuyenmucdiemtin = DB::table('chuyenmucdiemtin')->orderby('ID_CHUYENMUC_DT', 'desc')->get();
 
     $diemtin = DB::table('diemtin')->orderby('ID_DT', 'desc')->paginate(5);
     return view('page.DiemTin.DiemTin')->with('chuyenmucdiemtin', $chuyenmucdiemtin)
-      ->with('diemtin', $diemtin)->with('lienket', $lienket);
+      ->with('diemtin', $diemtin)->with('lienket', $lienket)->with('active_diemtin', $active_diemtin);
   }
 
   public function vanban()
   {
+    $active_vanban = 'menu_active';
     $lienket = DB::table('lienketwebsite')->get();
     $chuyenmucvanban = DB::table('chuyenmucvanban')->orderby('ID_CHUYENMUC_VB', 'desc')->get();
 
     $vanban = DB::table('vanban')->orderby('ID_VB', 'desc')->paginate(5);
     return view('page.VanBan.VanBan')->with('chuyenmucvanban', $chuyenmucvanban)
-      ->with('vanban', $vanban)->with('lienket', $lienket);
+      ->with('vanban', $vanban)->with('lienket', $lienket)->with('active_vanban', $active_vanban);
   }
 
   public function phapluat()
@@ -112,19 +121,23 @@ class HomeController extends Controller
 
   public function vpcc()
   {
+    $active_hoivien_main = 'menu_active';
+    $active_vpcc = 'menu_active';
     $lienket = DB::table('lienketwebsite')->get();
     $vpcc_count = DB::table('vanphongcongchung')->get();
     $vpcc = DB::table('vanphongcongchung')->orderby('NGAYTHANHLAP_VPCC', 'asc')->paginate(12);
-    return view('page.HoiVien.VPCC')->with('vpcc', $vpcc)->with('lienket', $lienket)->with('vpcc_count', $vpcc_count);
+    return view('page.HoiVien.VPCC')->with('vpcc', $vpcc)->with('lienket', $lienket)->with('vpcc_count', $vpcc_count)->with('active_vpcc', $active_vpcc)->with('active_hoivien_main', $active_hoivien_main);
   }
 
   public function hoivien()
   {
+    $active_hoivien_main = 'menu_active';
+    $active_hoivien = 'menu_active';
     $lienket = DB::table('lienketwebsite')->get();
 
 
     $hoivien = DB::table('hoivien')->orderby('ID_HV', 'asc')->get();
-    return view('page.HoiVien.HoiVien')->with('hoivien', $hoivien)->with('lienket', $lienket);
+    return view('page.HoiVien.HoiVien')->with('hoivien', $hoivien)->with('lienket', $lienket)->with('active_hoivien_main', $active_hoivien_main)->with('active_hoivien', $active_hoivien);
   }
 
   public function donggop(Request $request)
@@ -175,6 +188,7 @@ class HomeController extends Controller
   // thu vien
   public function thuvien()
   {
+    $active_thuvien = 'menu_active';
     $lienket = DB::table('lienketwebsite')->get();
 
     $chuyenmucthuvien = DB::table('chuyenmucthuvien')->orderby('ID_CHUYENMUC_TV', 'asc')->get();
@@ -183,7 +197,7 @@ class HomeController extends Controller
       ->where('chuyenmucthuvien.ID_CHUYENMUC_TV', 1)
       ->orderby('ID_TV', 'desc')->paginate(12);
     return view('page.ThuVien.ThuVien')->with('chuyenmucthuvien', $chuyenmucthuvien)
-      ->with('thuvien', $thuvien)->with('lienket', $lienket);
+      ->with('thuvien', $thuvien)->with('lienket', $lienket)->with('active_thuvien', $active_thuvien);
   }
 
   public function video($ID_CHUYENMUC_TV)
@@ -210,9 +224,11 @@ class HomeController extends Controller
 
   public function bieumau()
   {
+    $active_hoivien_main = 'menu_active';
+    $active_bieumau = 'menu_active';
     $lienket = DB::table('lienketwebsite')->get();
     $bieumau = DB::table('bieumauccv')->orderby('ID_BMCCV', 'desc')->paginate(5);
 
-    return view('page.HoiVien.BieuMau')->with('lienket', $lienket)->with('bieumau', $bieumau);
+    return view('page.HoiVien.BieuMau')->with('lienket', $lienket)->with('bieumau', $bieumau)->with('active_hoivien_main', $active_hoivien_main)->with('active_bieumau', $active_bieumau);
   }
 }

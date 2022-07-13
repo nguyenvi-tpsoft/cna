@@ -30,5 +30,5 @@ if (!empty($_FILES['hinhanhdt']['name'])) {
 
 
 $result = $con->query($sql);
-header("location: ../Diemtin/diemtin.php");
+header("location: ../diemtin/diemtin.php");
 $con->close();

@@ -184,7 +184,7 @@
 
 
 <section>
-    <div class="" style="border-bottom: 1px solid #ddd; padding-bottom: 10px;text-align: center;">
+    <div  style="border-bottom: 1px solid #ddd; padding-bottom: 10px;text-align: center;">
         <div class="title text-center">
             <div class="page-title color">
                 <div class="title title-icon">
