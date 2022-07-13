@@ -124,7 +124,22 @@ button:focus {
 .m-top-15 {
     margin-top: 15px;
 }
-
+.chuyendoicongchung_section {
+    margin: 20px 60px;
+}
+.chuyendoicongchung_section h2 {
+    font-size: 18px;
+    font-family: "FontAwesome";
+    font-weight: 600;
+    margin: 10px 0 0 0;
+    color: black;
+}
+.chuyendoicongchung_section p {
+    color: #9f6605;
+}
+#chuyendoicongchung_slider .chuyendoicongchung_item {
+    margin: 0 10px;
+}
 .item-content p {
     margin-bottom: 0;
 }
@@ -331,6 +346,7 @@ input.search-query.form-control {
     font-size: inherit;
     border-radius: 0.25rem;
 }
+
 .spr-form-input:hover,
 .spr-form-input:focus {
     border-color: #91ad41 !important;

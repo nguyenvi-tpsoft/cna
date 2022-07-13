@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="{{asset('public/frontend/libs/boostrap/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('public/frontend/libs/flaticon/css/flaticon.css')}}">
     <link rel="stylesheet" href="{{asset('public/frontend/libs/font-awesome/css/font-awesome.min.css')}}">
-    <link rel="stylesheet" href="{{asset('public/frontend/libs/owl.carousel/assets/owl.carousel.css')}}">
     <link rel="stylesheet" href="{{asset('public/frontend/libs/nivo-slider/css/nivo-slider.css')}}">
     <link rel="stylesheet" href="{{asset('public/frontend/libs/nivo-slider/css/animate.css')}}">
     <link rel="stylesheet" href="{{asset('public/frontend/libs/nivo-slider/css/style.css')}}">
@@ -17,6 +16,7 @@
     <link rel="stylesheet" href="{{asset('public/frontend/libs/font-cs/cs.css')}}"><!-- Template CSS -->
     <link rel="stylesheet" type="text/css" href="{{asset('public/frontend/css/style.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('public/frontend/css/responsive.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('public/frontend/css/owl.carousel.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('public/frontend/css/sweetalert.css')}}">
     <link rel="stylesheet" href="{{asset('public/frontend/css/toastr.min.css')}}">
     <link rel="stylesheet" href="{{asset('public/frontend/css/jquery.mCustomScrollbar.min.css')}}">
@@ -357,7 +357,7 @@
         </div>
     </div>
     <script src="{{asset('public/frontend/libs/jquery/jquery-1.11.3.min.js')}}"></script>
-    <script src="{{asset('public/frontend/libs/owl.carousel/owl.carousel.js')}}"></script>
+    <!-- <script src="{{asset('public/frontend/libs/owl.carousel/owl.carousel.js')}}"></script> -->
     <script src="{{asset('public/frontend/libs/boostrap/js/bootstrap.min.js')}}"></script>
     <script src="{{asset('public/frontend/libs/boostrap/js/popper.min.js')}}"></script>
     <script src="{{asset('public/frontend/libs/nivo-slider/js/jquery.nivo.slider.js')}}"></script>
@@ -370,6 +370,8 @@
     <script src="{{asset('public/frontend/libs/jquery.countdown/jquery.countdown.js')}}"></script>
     <script src="{{asset('public/frontend/libs/imagesloaded/imagesloaded.pkgd.js')}}"></script><!-- Template JS -->
     <script src="{{asset('public/frontend/js/custom.js')}}"></script>
+    <script src="{{asset('public/frontend/js/owl.carousel.min.js')}}"></script>
+
 
     <script src="{{asset('public/frontend/js/sweetalert.min.js')}}"></script>
 
@@ -400,7 +402,33 @@
             });
         });
     </script>
-
+    <script>
+        $(document).ready(function() {
+            $("#chuyendoicongchung_slider").owlCarousel({
+                loop: true,
+                margin: 0,
+                nav: false,
+                autoplay: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    500: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 3
+                    },
+                    1200: {
+                        items: 4
+                    }
+                }
+            });
+        });
+    </script>
 
 
 </body>

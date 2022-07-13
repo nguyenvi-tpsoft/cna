@@ -23,6 +23,7 @@ class HomeController extends Controller
     $active_home = 'menu_active';
     $diemtin1 = DB::table('diemtin')->orderby('ID_DT', 'desc')->limit(1)->get();
     $diemtin = DB::table('diemtin')->orderby('ID_DT', 'desc')->offset(1)->limit(3)->get();
+    $chuyendoicongchung = DB::table('chuyendoicongchung')->orderby('ID_DT', 'desc')->get();
 
     $vanban = DB::table('vanban')->orderby('ID_VB', 'desc')->limit(3)->get();
     $phapluat = DB::table('phapluat')->orderby('ID_PL', 'desc')->limit(3)->get();
@@ -45,7 +46,7 @@ class HomeController extends Controller
 
     return view('page.home')->with('diemtin', $diemtin)->with('diemtin1', $diemtin1)
       ->with('phapluat', $phapluat)->with('vanban', $vanban)
-      ->with('vpcc', $vpcc)->with('vpcc_top9', $vpcc_top9)->with('hoivien_all', $hoivien)->with('hoivien_top9', $hoivien_top9)->with('lienket', $lienket)->with('active_home', $active_home);
+      ->with('vpcc', $vpcc)->with('vpcc_top9', $vpcc_top9)->with('hoivien_all', $hoivien)->with('hoivien_top9', $hoivien_top9)->with('lienket', $lienket)->with('active_home', $active_home)->with('chuyendoicongchung', $chuyendoicongchung);
   }
 
   public function gioithieuchung()
@@ -98,6 +99,7 @@ class HomeController extends Controller
     return view('page.DiemTin.DiemTin')->with('chuyenmucdiemtin', $chuyenmucdiemtin)
       ->with('diemtin', $diemtin)->with('lienket', $lienket)->with('active_diemtin', $active_diemtin);
   }
+
 
   public function vanban()
   {

@@ -15,8 +15,6 @@
 
 </div>
 
-
-
 <section>
     <div class="section about">
         <div class="container">
@@ -80,6 +78,43 @@
 
 
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="chuyendoicongchung_section">
+            <div class="title text-center">
+                <div class="page-title">
+                    <h2>CHUYỂN ĐỔI CÔNG CHỨNG</h2>
+                </div>
+            </div>
+            <div class="owl-carousel owl-theme" id="chuyendoicongchung_slider">
+                <div class="chuyendoicongchung_item">
+                    <div class="chuyendoicongchung_img">
+                        <img src="{{asset('public/frontend/img/banner4.jpg')}}" alt="">
+                    </div>
+                    <h2>THÁI CÔNG SOFA</h2>
+                    <p>11/01/2000</p>
+                </div>
+                <div class="chuyendoicongchung_item">
+                    <div class="chuyendoicongchung_img">
+                        <img src="{{asset('public/frontend/img/banner4.jpg')}}" alt="">
+                    </div>
+                    <h2>THÁI CÔNG SOFA</h2>
+                    <p>11/01/2000</p>
+                </div>
+                <div class="chuyendoicongchung_item">
+                    <div class="chuyendoicongchung_img">
+                        <img src="{{asset('public/frontend/img/banner4.jpg')}}" alt="">
+                    </div>
+                    <h2>THÁI CÔNG SOFA</h2>
+                    <p>11/01/2000</p>
+                </div>
+                <div class="chuyendoicongchung_item">
+                    <div class="chuyendoicongchung_img">
+                        <img src="{{asset('public/frontend/img/banner4.jpg')}}" alt="">
+                    </div>
+                    <h2>THÁI CÔNG SOFA</h2>
+                    <p>11/01/2000</p>
                 </div>
             </div>
         </div>
@@ -184,7 +219,7 @@
 
 
 <section>
-    <div  style="border-bottom: 1px solid #ddd; padding-bottom: 10px;text-align: center;">
+    <div style="border-bottom: 1px solid #ddd; padding-bottom: 10px;text-align: center;">
         <div class="title text-center">
             <div class="page-title color">
                 <div class="title title-icon">
@@ -255,6 +290,7 @@
 
 
 </section>
+
 
 
 

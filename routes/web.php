@@ -14,6 +14,9 @@ $a = url()->current();
 Route::get('/', 'App\Http\Controllers\HomeController@index');
 // lien diem tin
 Route::get('diem-tin', 'App\Http\Controllers\HomeController@diemtin');
+Route::get('chi-tiet-diem-tin/{ID_DT}', 'App\Http\Controllers\DiemTinController@show_ChiTietDT');
+Route::get('chuyen-doi-cong-chung/{ID_DT}', 'App\Http\Controllers\ChuyenDoiCongChungController@show_chuyendoicongchung');
+
 // trang khach hang - trang chu (frontend)
 Route::get('/trang-chu', 'App\Http\Controllers\HomeController@index');
 
@@ -38,7 +41,6 @@ Route::get('lien-he', 'App\Http\Controllers\HomeController@lienhe');
 Route::get('chuyen-muc-diem-tin/{ID_CHUYENMUC_DT}', 'App\Http\Controllers\DiemTinController@show_ChuyenMucDT');
 
 //
-Route::get('chi-tiet-diem-tin/{ID_DT}', 'App\Http\Controllers\DiemTinController@show_ChiTietDT');
 
 // van ban
 Route::get('van-ban', 'App\Http\Controllers\HomeController@vanban');
