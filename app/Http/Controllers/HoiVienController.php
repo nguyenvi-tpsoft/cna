@@ -7,7 +7,7 @@ use DB;
 use App\Http\Requests;
 use Session;
 use Illuminate\Support\Facades\Redirect;  //Redirect :tra ve
-session_start();
+// session_start();
 use Auth;
 use Toastr;
 

@@ -9,7 +9,7 @@ use Session;
 use Illuminate\Support\Facades\Redirect;  //Redirect :tra ve
 use Toastr;
 
-session_start();
+// session_start();
 
 use Mail;
 
