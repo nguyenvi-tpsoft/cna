@@ -127,12 +127,14 @@ button:focus {
 .chuyendoicongchung_section {
     margin: 20px 60px;
 }
-.chuyendoicongchung_section h2 {
+.chuyendoicongchung_section .title {
     font-size: 18px;
     font-family: "FontAwesome";
     font-weight: 600;
     margin: 10px 0 0 0;
     color: black;
+    text-align: left;
+    margin-left: 10px !important;
 }
 .chuyendoicongchung_section p {
     color: #9f6605;

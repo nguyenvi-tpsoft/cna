@@ -84,7 +84,7 @@
         <div class="chuyendoicongchung_section">
             <div class="title text-center">
                 <div class="page-title">
-                    <h2>CHUYỂN ĐỔI CÔNG CHỨNG</h2>
+                    <h2 class="title">CHUYỂN ĐỔI SỐ CÔNG CHỨNG</h2>
                 </div>
             </div>
             <div class="owl-carousel owl-theme" id="chuyendoicongchung_slider">
