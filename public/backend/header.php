@@ -8,21 +8,21 @@
     <title>Trang chủ</title>
     <script src="//cdn.ckeditor.com/4.19.0/standard/ckeditor.js"></script>
     <!-- plugins:css -->
-    <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
     <!-- endinject -->
     <!-- Plugin css for this page -->
-    <link rel="stylesheet" href="../../assets/vendors/jvectormap/jquery-jvectormap.css">
-    <link rel="stylesheet" href="../../assets/vendors/flag-icon-css/css/flag-icon.min.css">
-    <link rel="stylesheet" href="../../assets/vendors/owl-carousel-2/owl.carousel.min.css">
-    <link rel="stylesheet" href="../../assets/vendors/owl-carousel-2/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/vendors/jvectormap/jquery-jvectormap.css">
+    <link rel="stylesheet" href="assets/vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="assets/vendors/owl-carousel-2/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/vendors/owl-carousel-2/owl.theme.default.min.css">
     <!-- End plugin css for this page -->
     <!-- inject:css -->
     <!-- endinject -->
     <!-- Layout styles -->
-    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <!-- End layout styles -->
-    <link rel="shortcut icon" href="../../assets/images/logo.jpg" />
+    <link rel="shortcut icon" href="assets/images/logo.jpg" />
 </head>
 
 <body>
@@ -31,20 +31,20 @@
 
     session_start();
     if (isset($_SESSION['email'])) {
-        include '../../connectsql.php';
+        include 'connectsql.php';
         $sql = "SELECT *  FROM admin";
         $result = $con->query($sql);
         $row = $result->fetch_assoc();
         $user = $row['TEN_ADMIN'];
     } else {
-        header("location: ../../pages/samples/login.html");
+        header("location: ../backend/pages/samples/login.html");
     }
     ?>
     <div class="container-scroller">
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
             <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-                <a class="sidebar-brand brand-logo" href="index.php"><img src="../../assets/images/logo.jpg" alt="logo" /></a>
-                <a class="sidebar-brand brand-logo-mini" href="index.php"><img src="../../assets/images/logo.jpg" alt="logo" /></a>
+                <a class="sidebar-brand brand-logo" href="index.php"><img src="assets/images/logo.jpg" alt="logo" /></a>
+                <a class="sidebar-brand brand-logo-mini" href="index.php"><img src="assets/images/logo.jpg" alt="logo" /></a>
             </div>
             <ul class="nav">
                 <li class="nav-item profile">
@@ -65,15 +65,15 @@
                     </a>
                     <div class="collapse" id="ui-basic">
                         <ul class="nav flex-column sub-menu">
-                            <li class="nav-item"> <a class="nav-link" href="../../pages/chuyenmucdiemtin/index.php">Chuyên mục điểm tin</a></li>
-                            <li class="nav-item"> <a class="nav-link" href="../../pages/chuyenmucvanban/index.php">Chuyên mục văn bản</a></li>
-                            <li class="nav-item"> <a class="nav-link" href="../../pages/chuyenmucphapluat/index.php">Chuyên mục pháp luật</a></li>
+                            <li class="nav-item"> <a class="nav-link" href="../backend/pages/chuyenmucdiemtin/index.php">Chuyên mục điểm tin</a></li>
+                            <li class="nav-item"> <a class="nav-link" href="../backend/pages/chuyenmucvanban/index.php">Chuyên mục văn bản</a></li>
+                            <li class="nav-item"> <a class="nav-link" href="../backend/pages/chuyenmucphapluat/index.php">Chuyên mục pháp luật</a></li>
 
                         </ul>
                     </div>
                 </li>
                 <li class="nav-item menu-items">
-                    <a class="nav-link" href="../../pages/diemtin/diemtin.php">
+                    <a class="nav-link" href="../backend/pages/diemtin/diemtin.php">
                         <span class="menu-icon">
                             <i class="mdi mdi-playlist-play"></i>
                         </span>
@@ -81,7 +81,7 @@
                     </a>
                 </li>
                 <li class="nav-item menu-items">
-                    <a class="nav-link" href="../../pages/chuyendoicongchung/diemtin.php">
+                    <a class="nav-link" href="../backend/pages/chuyendoicongchung/diemtin.php">
                         <span class="menu-icon">
                             <i class="mdi mdi-playlist-play"></i>
                         </span>
@@ -92,7 +92,7 @@
 
 
                 <li class="nav-item menu-items">
-                    <a class="nav-link" href="../../pages/phapluat/phapluat.php">
+                    <a class="nav-link" href="../backend/pages/phapluat/phapluat.php">
                         <span class="menu-icon">
                             <i class="mdi mdi-table-large"></i>
                         </span>
@@ -100,7 +100,7 @@
                     </a>
                 </li>
                 <li class="nav-item menu-items">
-                    <a class="nav-link" href="../../pages/vanban/vanban.php">
+                    <a class="nav-link" href="../backend/pages/vanban/vanban.php">
                         <span class="menu-icon">
                             <i class="mdi mdi-table-large"></i>
                         </span>
@@ -108,7 +108,7 @@
                     </a>
                 </li>
                 <li class="nav-item menu-items">
-                    <a class="nav-link" href="../../pages/hoivien/hoivien.php">
+                    <a class="nav-link" href="../backend/pages/hoivien/hoivien.php">
                         <span class="menu-icon">
                             <i class="mdi mdi-table-large"></i>
                         </span>
@@ -116,7 +116,7 @@
                     </a>
                 </li>
                 <li class="nav-item menu-items">
-                    <a class="nav-link" href="../../pages/vanphongcongchung/vanphongcongchung.php">
+                    <a class="nav-link" href="../backend/pages/vanphongcongchung/vanphongcongchung.php">
                         <span class="menu-icon">
                             <i class="mdi mdi-table-large"></i>
                         </span>
@@ -181,7 +181,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
                                 <div class="navbar-profile">
-                                    <img class="img-xs rounded-circle" src="../../assets/images/faces/iconadmin.png" alt="">
+                                    <img class="img-xs rounded-circle" src="assets/images/faces/iconadmin.png" alt="">
                                     <p class="mb-0 d-none d-sm-block navbar-profile-name"><?php echo $user; ?></p>
                                     <i class="mdi mdi-menu-down d-none d-sm-block"></i>
                                 </div>
@@ -190,7 +190,7 @@
                                 <h6 class="p-3 mb-0">Thông tin tài khoản</h6>
                                 <div class="dropdown-divider"></div>
 
-                                <a href="../../pages/samples/change_pass.php" class="dropdown-item preview-item">
+                                <a href="../backend/pages/samples/change_pass.php" class="dropdown-item preview-item">
                                     <div class="preview-thumbnail">
                                         <div class="preview-icon bg-dark rounded-circle">
                                             <i class="mdi mdi-settings text-success"></i>
@@ -201,7 +201,7 @@
                                     </div>
                                 </a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item preview-item" href="../../pages/samples/logout.php" onclick="return confirm('Bạn có chắc là muốn đăng xuất ???');">
+                                <a class="dropdown-item preview-item" href="../backend/pages/samples/logout.php" onclick="return confirm('Bạn có chắc là muốn đăng xuất ???');">
                                     <div class="preview-thumbnail">
                                         <div class="preview-icon bg-dark rounded-circle">
                                             <i class="mdi mdi-logout text-danger"></i>

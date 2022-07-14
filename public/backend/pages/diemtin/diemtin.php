@@ -1,5 +1,5 @@
 <?php
-require('../../header.php')
+require('../views/header.php')
 ?>
 <div class="main-panel">
   <div class="content-wrapper content-cap">
@@ -28,8 +28,6 @@ require('../../header.php')
                     <td><select name="cmdt" id="cmdt">
 
                         <?php
-
-
                         include '../../connectsql.php';
 
                         $sql = "SELECT * FROM chuyenmucdiemtin";
@@ -145,5 +143,5 @@ require('../../header.php')
 </div>
 
 <?php
-include('../../footer.php')
+include('../views/footer.php')
 ?>
