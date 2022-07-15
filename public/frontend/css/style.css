@@ -1059,6 +1059,17 @@ textarea:focus {
     border-top: 1px solid #ddd;
     margin-top: 40px;
 }
+.chuyendoiso_title_div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.chuyendoiso_title_div .xemthem {
+    font-size: 18px;
+    color: black;
+    margin-left: 15px;
+    font-family: "FontAwesome";
+}
 .button-main.diemtin:hover {
     background-color: #fff;
 }

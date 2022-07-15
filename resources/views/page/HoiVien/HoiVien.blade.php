@@ -24,7 +24,7 @@
 </div>
 
 
-<div class="section about">
+<div class="section">
     <div class="section_hoivien">
         <div class="title text-center">
             <div class="page-title color">
@@ -39,7 +39,7 @@
                 @foreach($hoivien as $key=>$hv)
                 <div class="col-sm-4 col-12">
                     <div class="item">
-                        <div class="item-img">
+                        <div class="hoivien_img_daidien">
                             <a href="#" title=""><img class="img-fluid" src="{{($hv->ANH_HV!=''?URL::to('public/upload'.$hv->ANH_HV):URL::to('public/frontend/img/hoivien_item.png'))}}" alt="img">
                             </a>
                         </div>

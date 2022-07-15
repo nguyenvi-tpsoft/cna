@@ -84,7 +84,7 @@
         <div class="container">
             <div class="chuyendoicongchung_section">
                 <div class="title text-center">
-                    <div class="page-title">
+                    <div class="chuyendoiso_title_div">
                         <h2 class="title title_main_red">CHUYỂN ĐỔI SỐ CÔNG CHỨNG</h2>
                     </div>
                 </div>
@@ -121,8 +121,9 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="page-title color">
-                                <div class="title-icon text-left">
+                                <div class="chuyendoiso_title_div">
                                     <h2 class="title-h2 title_main_red">VĂN BẢN CỦA HỘI</h2>
+                                    <a class="xemthem" href="{{URL::to('/van-ban')}}">Xem thêm ({{count($vanban_all)}})</a>
                                 </div>
                             </div>
                             <div class="vanbancuahoi_div active">
@@ -136,8 +137,9 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="page-title color">
-                                <div class="title-icon text-left">
+                                <div class="chuyendoiso_title_div">
                                     <h2 class="title-h2 title_main_red">VĂN BẢN CỦA HIỆP HỘI</h2>
+                                    <a class="xemthem" href="{{URL::to('/van-ban-hiep-hoi')}}">Xem thêm ({{count($vanbanhiephoi_all)}})</a>
                                 </div>
                             </div>
                             <div class="vanbancuahoi_div">
@@ -152,8 +154,9 @@
 
                         <div class="col-lg-6 col-md-6">
                             <div class="page-title color">
-                                <div class="title-icon text-left">
+                                <div class="chuyendoiso_title_div">
                                     <h2 class="title-h2 title_main_red">VĂN BẢN PHÁP LUẬT</h2>
+                                    <a class="xemthem" href="{{URL::to('/phap-luat')}}">Xem thêm ({{count($phapluat_all)}})</a>
                                 </div>
                             </div>
                             <div class="vanbancuahoi_div">

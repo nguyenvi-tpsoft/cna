@@ -26,10 +26,13 @@ class HomeController extends Controller
     $chuyendoicongchung = DB::table('chuyendoicongchung')->orderby('ID_DT', 'desc')->get();
 
     $vanban = DB::table('vanban')->orderby('ID_VB', 'desc')->limit(4)->get();
+    $vanban_all = DB::table('vanban')->get();
     $vanbanhiephoi = DB::table('vanbanhiephoi')->orderby('ID_PL', 'desc')->limit(4)->get();
+    $vanbanhiephoi_all = DB::table('vanbanhiephoi')->get();
 
 
     $phapluat = DB::table('phapluat')->orderby('NGAY_HIEULUC', 'desc')->limit(4)->get();
+    $phapluat_all = DB::table('phapluat')->get();
 
 
 
@@ -49,7 +52,7 @@ class HomeController extends Controller
 
     return view('page.home')->with('diemtin', $diemtin)->with('diemtin1', $diemtin1)
       ->with('phapluat', $phapluat)->with('vanban', $vanban)
-      ->with('vpcc', $vpcc)->with('vpcc_top9', $vpcc_top9)->with('hoivien_all', $hoivien)->with('hoivien_top9', $hoivien_top9)->with('lienket', $lienket)->with('active_home', $active_home)->with('chuyendoicongchung', $chuyendoicongchung)->with('vanbanhiephoi', $vanbanhiephoi);
+      ->with('vpcc', $vpcc)->with('vpcc_top9', $vpcc_top9)->with('hoivien_all', $hoivien)->with('hoivien_top9', $hoivien_top9)->with('lienket', $lienket)->with('active_home', $active_home)->with('chuyendoicongchung', $chuyendoicongchung)->with('vanbanhiephoi', $vanbanhiephoi)->with('phapluat_all', $phapluat_all)->with('vanban_all', $vanban_all)->with('vanbanhiephoi_all', $vanbanhiephoi_all);
   }
 
   public function gioithieuchung()
@@ -122,6 +125,12 @@ class HomeController extends Controller
 
     $phapluat = DB::table('phapluat')->orderby('ID_PL', 'desc')->paginate(5);
     return view('page.PhapLuat.PhapLuat')->with('chuyenmucphapluat', $chuyenmucphapluat)->with('phapluat', $phapluat)->with('lienket', $lienket);
+  }
+  public function vanbanhiephoi()
+  {
+    $lienket = DB::table('lienketwebsite')->get();
+    $phapluat = DB::table('vanbanhiephoi')->orderby('ID_PL', 'desc')->paginate(5);
+    return view('page.VanBanHiepHoi.VanBanHiepHoi')->with('phapluat', $phapluat)->with('lienket', $lienket);
   }
 
   public function vpcc()

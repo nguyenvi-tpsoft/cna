@@ -13,7 +13,7 @@ $a = url()->current();
 // KHACH HANG
 Route::get('/', 'App\Http\Controllers\HomeController@index');
 // lien diem tin
-Route::get('diem-tin', 'App\Http\Controllers\HomeController@diemtin');
+Route::any('diem-tin', 'App\Http\Controllers\HomeController@diemtin');
 Route::get('chi-tiet-diem-tin/{ID_DT}', 'App\Http\Controllers\DiemTinController@show_ChiTietDT');
 
 
@@ -53,6 +53,7 @@ Route::get('chi-tiet-van-ban/{ID_VB}', 'App\Http\Controllers\VanBanController@sh
 
 // phap luat
 Route::get('phap-luat', 'App\Http\Controllers\HomeController@phapluat');
+Route::get('van-ban-hiep-hoi', 'App\Http\Controllers\HomeController@vanbanhiephoi');
 
 Route::get('chuyen-muc-phap-luat/{ID_CHUYENMUC_PL}', 'App\Http\Controllers\PhapLuatController@show_ChuyenMucPL');
 
