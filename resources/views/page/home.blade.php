@@ -20,7 +20,7 @@
         <div class="container">
             <div class="title text-center">
                 <div class="page-title diemtin">
-                    <h2>ĐIỂM TIN </h2>
+                    <h2 class="title_main_red">ĐIỂM TIN </h2>
                 </div>
             </div>
 
@@ -81,50 +81,36 @@
                 </div>
             </div>
         </div>
-        <div class="chuyendoicongchung_section">
-            <div class="title text-center">
-                <div class="page-title">
-                    <h2 class="title">CHUYỂN ĐỔI SỐ CÔNG CHỨNG</h2>
-                </div>
-            </div>
-            <div class="owl-carousel owl-theme" id="chuyendoicongchung_slider">
-                <div class="chuyendoicongchung_item">
-                    <div class="chuyendoicongchung_img">
-                        <img src="{{asset('public/frontend/img/banner4.jpg')}}" alt="">
+        <div class="container">
+            <div class="chuyendoicongchung_section">
+                <div class="title text-center">
+                    <div class="page-title">
+                        <h2 class="title title_main_red">CHUYỂN ĐỔI SỐ CÔNG CHỨNG</h2>
                     </div>
-                    <h2>THÁI CÔNG SOFA</h2>
-                    <p>11/01/2000</p>
                 </div>
-                <div class="chuyendoicongchung_item">
-                    <div class="chuyendoicongchung_img">
-                        <img src="{{asset('public/frontend/img/banner4.jpg')}}" alt="">
+                <div class="owl-carousel owl-theme" id="chuyendoicongchung_slider">
+                    @foreach($chuyendoicongchung as $key=>$cdcc)
+                    <div class="chuyendoicongchung_item">
+                        <div class="chuyendoicongchung_img">
+                            <a href="{{URL::to('chuyen-doi-cong-chung/'.$cdcc->ID_DT)}}">
+                                <img src="{{URL::to('public/upload/'.$cdcc->HINHANH_DT)}}" alt="">
+                            </a>
+                        </div>
+                        <h2>{{$cdcc->TIEUDE_DT}}</h2>
+                        <p>{{date('d/m/Y',strtotime($cdcc->NGAYDANG_DT))}}</p>
                     </div>
-                    <h2>THÁI CÔNG SOFA</h2>
-                    <p>11/01/2000</p>
-                </div>
-                <div class="chuyendoicongchung_item">
-                    <div class="chuyendoicongchung_img">
-                        <img src="{{asset('public/frontend/img/banner4.jpg')}}" alt="">
-                    </div>
-                    <h2>THÁI CÔNG SOFA</h2>
-                    <p>11/01/2000</p>
-                </div>
-                <div class="chuyendoicongchung_item">
-                    <div class="chuyendoicongchung_img">
-                        <img src="{{asset('public/frontend/img/banner4.jpg')}}" alt="">
-                    </div>
-                    <h2>THÁI CÔNG SOFA</h2>
-                    <p>11/01/2000</p>
+                    @endforeach
                 </div>
             </div>
         </div>
+
     </div>
 </section>
 
 
 <section>
 
-    <div class="oars-store sm-text-center pd-top-bottom" style="background-color: #ecf8f2">
+    <div class=" oars-store sm-text-center pd-top-bottom" style="background-color: #ecf8f2">
 
         <div class="section about">
             <div class="container">
@@ -133,86 +119,59 @@
 
                 <div class="container-full">
                     <div class="row">
-                        <div class="col-lg-6 col-md-6">
-
+                        <div class="col-lg-12">
                             <div class="page-title color">
                                 <div class="title-icon text-left">
-                                    <h2 class="title-h2">VĂN BẢN CỦA HỘI</h2>
+                                    <h2 class="title-h2 title_main_red">VĂN BẢN CỦA HỘI</h2>
                                 </div>
                             </div>
-
-                            <div class="title clearfix">
-
-                                <div class="group-store">
-
-                                    <div class="index-core-group flex-center clearfix d-flex align-items-center">
-
-                                        <div style=" display: block;">
-                                            @foreach($vanban as $key=>$vb)
-
-                                            <div class="index-core-group flex-center clearfix align-items-center">
-                                                <div class="item-img float-left">
-                                                    <a href="{{URL::to('chi-tiet-van-ban/'.$vb->ID_VB)}}" title=""><img style="border-radius: 5px" class="img-fluid" src="{{URL::to('public/upload/'.$vb->HINHANH_VB)}}"></a>
-                                                </div>
-                                                <div class="item-content" style="float: inherit">
-                                                    <div class="sub-title">
-                                                        <a href="{{URL::to('chi-tiet-van-ban/'.$vb->ID_VB)}}">
-                                                            <h4 class="no-ater">{{$vb->TIEUDE_VB}}</h4>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            @endforeach
-
-
-                                        </div>
-                                    </div>
+                            <div class="vanbancuahoi_div active">
+                                @foreach($vanban as $key=>$vb)
+                                <div class="item">
+                                    <h2>{{$vb->TIEUDE_VB}}</h2>
+                                    <a class="btn view button-main" href="{{asset('public/upload'.$vb->FILE_VB)}}">Tải về</a>
                                 </div>
+                                @endforeach
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="page-title color">
+                                <div class="title-icon text-left">
+                                    <h2 class="title-h2 title_main_red">VĂN BẢN CỦA HIỆP HỘI</h2>
+                                </div>
+                            </div>
+                            <div class="vanbancuahoi_div">
+                                @foreach($vanbanhiephoi as $key=>$vb)
+                                <div class="item">
+                                    <h2>{{$vb->TIEUDE_PL}}</h2>
+                                    <a class="btn view button-main" href="{{asset('public/upload'.$vb->FILE_PL)}}">Tải về</a>
+                                </div>
+                                @endforeach
                             </div>
                         </div>
 
-                        {{-- </div> --}}
                         <div class="col-lg-6 col-md-6">
-                            <div class="title clearfix">
-
-                                <div class="page-title color">
-                                    <div class="title-icon text-left">
-                                        <h2 class="title-h2">VĂN BẢN PHÁP LUẬT</h2>
-                                    </div>
+                            <div class="page-title color">
+                                <div class="title-icon text-left">
+                                    <h2 class="title-h2 title_main_red">VĂN BẢN PHÁP LUẬT</h2>
                                 </div>
-
-                                <div class="group-store">
-                                    <div class="index-core-group flex-center clearfix d-flex align-items-center">
-                                        <div style="display: block;">
-                                            @php $i=0; @endphp @foreach($phapluat as $key=>$pl) @php $i++; @endphp
-                                            <div class="index-core-group flex-center clearfix  align-items-center">
-
-                                                <div class="item-content">
-                                                    <div class="sub-title">
-                                                        <a href="{{URL::to('chi-tiet-phap-luat/'.$pl->ID_PL)}}">
-
-                                                            <h4 class="no-ater"> <label style="font-weight: 600;">{{$i}}</label>. {{$pl->TIEUDE_PL}}</h4>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            @endforeach
-
-
-                                        </div>
-                                    </div>
-
+                            </div>
+                            <div class="vanbancuahoi_div">
+                                @php $i=0; @endphp @foreach($phapluat as $key=>$pl) @php $i++; @endphp
+                                <div class="item">
+                                    <h2>{{$pl->TIEUDE_PL}}</h2>
+                                    <a class="btn view button-main" href="{{asset('public/upload'.$pl->FILE_PL)}}">Tải về</a>
                                 </div>
+                                @endforeach
                             </div>
                         </div>
                     </div>
                 </div>
-
-
             </div>
+
+
         </div>
+    </div>
     </div>
 </section>
 
@@ -220,18 +179,21 @@
 
 <section>
     <div style="border-bottom: 1px solid #ddd; padding-bottom: 10px;text-align: center;">
-        <div class="title text-center">
+        <div class="content-about text-center container">
             <div class="page-title color">
-                <div class="title title-icon">
-                    <h2 class="title-h2">HỘI VIÊN </h2>
+                <div class="title-icon text-left">
+                    <h2 class="title-h2 title_main_red">HỘI VIÊN</h2>
                 </div>
             </div>
-        </div>
-        <div class="content-about text-center container">
             <div class="row">
                 @foreach($hoivien_top9 as $key=>$hv)
                 <div class="col-sm-4 col-12">
-                    <div class="item">
+                    <div class="item hoivien_home_item">
+                        <div class="hoivien_img_daidien">
+                            <a href="#" title="">
+                                <img class="img-fluid" src="{{($hv->ANH_HV!=''?URL::to('public/upload'.$hv->ANH_HV):URL::to('public/frontend/img/hoivien_item.png'))}}" alt="img">
+                            </a>
+                        </div>
                         <div class="item-content">
                             <div class="sub-title">
                                 <h3>{{$hv->TEN_HV}}</h3>
@@ -249,12 +211,11 @@
     </div>
     <div class="section about">
         <div class="container">
-            <div class="title text-center">
-                <div class="page-title color">
-                    <h2>TỔ CHỨC HÀNH NGHỀ CÔNG CHỨNG </h2>
+            <div class="page-title color">
+                <div class="title-icon text-left">
+                    <h2 class="title-h2 title_main_red">TỔ CHỨC HÀNH NGHỀ CÔNG CHỨNG </h2>
                 </div>
             </div>
-
 
             <div class="section blog-news" style="text-align: center;">
 

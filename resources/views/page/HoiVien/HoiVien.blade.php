@@ -39,10 +39,10 @@
                 @foreach($hoivien as $key=>$hv)
                 <div class="col-sm-4 col-12">
                     <div class="item">
-                        <!-- <div class="item-img">
-                    <a href="#s" title=""><img class="img-fluid" src="{{URL::to('public/upload'.$hv->ANH_HV)}}" alt="img">
-                    </a>
-                </div> -->
+                        <div class="item-img">
+                            <a href="#" title=""><img class="img-fluid" src="{{($hv->ANH_HV!=''?URL::to('public/upload'.$hv->ANH_HV):URL::to('public/frontend/img/hoivien_item.png'))}}" alt="img">
+                            </a>
+                        </div>
                         <div class="item-content">
                             <div class="sub-title">
                                 <h3>{{$hv->TEN_HV}}</h3>

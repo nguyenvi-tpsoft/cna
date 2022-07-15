@@ -5,10 +5,9 @@ require('../views/header.php')
 include '../../connectsql.php';
 $id_pl = $_GET['id_pl'];
 $email = $_SESSION['email'];
-$sql = "SELECT * FROM phapluat join chuyenmucphapluat on phapluat.ID_CHUYENMUC_PL=chuyenmucphapluat.ID_CHUYENMUC_PL and ID_PL='$id_pl'";
+$sql = "SELECT * FROM vanbanhiephoi where ID_PL='$id_pl'";
 $result = $con->query($sql);
 $row = $result->fetch_assoc();
-$TEN_CHUYENMUC_PL = $row['TEN_CHUYENMUC_PL'];
 $_SESSION['id_pl'] = $id_pl;
 ?>
 
@@ -16,7 +15,7 @@ $_SESSION['id_pl'] = $id_pl;
 <div class="main-panel">
   <div class="content-wrapper content-cap">
     <div class="page-header">
-      <h3 class="page-title"> PHÁP LUẬT </h3>
+      <h3 class="page-title"> VĂN BẢN CỦA HIỆP HỘI </h3>
     </div>
     <div class="col-lg-12 grid-margin stretch-card">
       <div class="card">
@@ -27,35 +26,16 @@ $_SESSION['id_pl'] = $id_pl;
                 <thead>
                   <tr>
                     <th> </th>
-                    <th style="font-size:18px; text-align: left;">Sửa pháp luật</th>
+                    <th style="font-size:18px; text-align: left;">Sửa văn bản</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <th>Tiêu đề pháp luật</th>
+                    <th>Tiêu đề văn bản</th>
                     <td><input style="width: 100%;" style='text' value='<?php echo $row['TIEUDE_PL']; ?>' name='tieude_pl'> </td>
                   </tr>
                   <tr>
-                    <th>Chuyên mục pháp luật</th>
-                    <td>
-                      <select name='cm_pl' id='cm_pl' value=<?php echo $row["ID_CHUYENMUC_PL"]; ?>>
-                        <?php
-                        $sql = "SELECT * FROM chuyenmucphapluat";
-                        $result = $con->query($sql);
-
-                        while ($row2 = $result->fetch_assoc()) {
-                          if ($row["ID_CHUYENMUC_PL"] == $row2['ID_CHUYENMUC_PL']) {
-                            echo "<option value='" . $row2['ID_CHUYENMUC_PL'] . "' selected>" . $row2['TEN_CHUYENMUC_PL'] . " </option><br>";
-                          } else {
-                            echo "<option value='" . $row2['ID_CHUYENMUC_PL'] . "'>" . $row2['TEN_CHUYENMUC_PL'] . " </option><br>";
-                          }
-                        }
-                        ?>
-                      </select>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>Nội dung pháp luật</th>
+                    <th>Nội dung văn bản</th>
                     <td>
                       <textarea id='nd_pl' name='nd_pl' rows='8' cols='40' value=""><?php echo $row['NOIDUNG_PL']; ?></textarea>
                       <script>
@@ -83,10 +63,6 @@ $_SESSION['id_pl'] = $id_pl;
 
               <td><button type='submit' class='btn btn-primary btn-fw' style='float:right;' name='id_pl' value='<?php echo $id_pl ?>'>Cập nhật</button> </td>
             </form>
-
-
-
-
           </div>
         </div>
       </div>

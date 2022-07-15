@@ -16,30 +16,14 @@ use Toastr;
 class ChuyenDoiCongChungController extends Controller
 {
 
-    // public function show_ChiTietDT($ID_DT)
-    // {
-    //     $lienket = DB::table('lienketwebsite')->get();
+    public function show_chuyendoicongchung($ID_DT)
+    {
+        $lienket = DB::table('lienketwebsite')->get();
+        $chuyendoicongchung = DB::table('chuyendoicongchung')
+            ->where('ID_DT', $ID_DT)
+            ->get();
+        $lienquan = DB::table('chuyendoicongchung')->where('ID_DT', 'not like', $ID_DT)->orderby('ID_DT', 'desc')->limit(5)->get();
 
-    //     $diemtin = DB::table('diemtin')
-    //         ->join('chuyenmucdiemtin', 'chuyenmucdiemtin.ID_CHUYENMUC_DT', '=', 'diemtin.ID_CHUYENMUC_DT')
-    //         ->where('diemtin.ID_DT', $ID_DT)
-    //         ->get();
-    //     $chuyenmuc_ten = DB::table('diemtin')
-    //         ->join('chuyenmucdiemtin', 'chuyenmucdiemtin.ID_CHUYENMUC_DT', '=', 'diemtin.ID_CHUYENMUC_DT')
-    //         ->where('diemtin.ID_DT', $ID_DT)
-    //         ->limit(1)->get();
-    //     // diem tin lien quan
-
-    //     foreach ($diemtin as $key => $value) {
-    //         $ID_CHUYENMUC_DT = $value->ID_CHUYENMUC_DT;
-    //     }
-    //     $DT_lienquan = DB::table('diemtin')
-    //         ->join('chuyenmucdiemtin', 'chuyenmucdiemtin.ID_CHUYENMUC_DT', '=', 'diemtin.ID_CHUYENMUC_DT')
-    //         ->where('chuyenmucdiemtin.ID_CHUYENMUC_DT', $ID_CHUYENMUC_DT)
-    //         ->limit(5)->get();
-
-    //     return view('page.DiemTin.chitiet_Diemtin')->with('diemtin', $diemtin)
-    //         ->with('chuyenmuc_ten', $chuyenmuc_ten)->with('lienket', $lienket)
-    //         ->with('DT_lienquan', $DT_lienquan);
-    // }
+        return view('page.chuyendoicongchung.chuyendoicongchung')->with('chuyendoicongchung', $chuyendoicongchung)->with('lienket', $lienket)->with('lienquan', $lienquan);
+    }
 }

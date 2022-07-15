@@ -347,7 +347,7 @@
     </footer>
     </div><!-- Back-To-Top Button -->
     <div class="back-to-top"><a href="#"><i class="fa fa-long-arrow-up"></i></a></div><!-- Page Loader -->
-    <div id="page-preloader">
+    <!-- <div id="page-preloader">
         <div class="page-loading">
             <div class="dot"></div>
             <div class="dot"></div>
@@ -355,7 +355,7 @@
             <div class="dot"></div>
             <div class="dot"></div>
         </div>
-    </div>
+    </div> -->
     <script src="{{asset('public/frontend/libs/jquery/jquery-1.11.3.min.js')}}"></script>
     <!-- <script src="{{asset('public/frontend/libs/owl.carousel/owl.carousel.js')}}"></script> -->
     <script src="{{asset('public/frontend/libs/boostrap/js/bootstrap.min.js')}}"></script>
@@ -419,10 +419,10 @@
                     600: {
                         items: 1
                     },
-                    1000: {
-                        items: 3
-                    },
                     1200: {
+                        items: 4
+                    },
+                    1300: {
                         items: 4
                     }
                 }

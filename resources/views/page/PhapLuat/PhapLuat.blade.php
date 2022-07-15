@@ -40,23 +40,16 @@
                                     <button type="submit" name="submit_search" class="btn button btn-default float-right" style="background-color: #1e551e"><i class="fa fa-search"></i>
                                     </button>
                                 </div>
-
-
-
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
-
-
             <div class="section wrap-product-categories" style="margin-bottom: 1px; color: black">
-
                 <div class="content-about text-center m-top">
                     <div class="row">
                         @foreach($chuyenmucphapluat as $key=>$chuyenmuc)
                         <div class="col-lg-3 col-md-6 col-sm-12 mg-bottom-50" style="margin-bottom: 2rem;     ">
-
                             <div class="right-left hidden-xs slow disciver-now" class="dd" style="background-color: white; width: 19rem">
                                 <a class="btn button button-main" href="{{URL::to('chuyen-muc-phap-luat/'.$chuyenmuc->ID_CHUYENMUC_PL)}}" style="width: 18rem;  background-color: #1e551e; border: 1px solid #1e551e; border-radius: 1px;">{{$chuyenmuc->TEN_CHUYENMUC_PL}}</a>
                             </div>
@@ -64,12 +57,7 @@
                         @endforeach
                     </div>
                 </div>
-
-
             </div>
-
-
-
         </div>
     </div>
 </section>

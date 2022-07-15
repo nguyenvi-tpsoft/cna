@@ -102,12 +102,8 @@ require('../views/header.php')
         </div>
       </div>
     </div>
-    <!-- content-wrapper ends -->
-    <!-- partial:../../partials/_footer.html -->
 
-    <!-- partial -->
   </div>
-  <!-- main-panel ends -->
 </div>
 <?php
 require('../views/footer.php')
