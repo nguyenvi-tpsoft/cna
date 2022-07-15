@@ -12,7 +12,7 @@ $duongdan = '../../../upload/phapluat/' . $phapluat_img;
 $duongdan1 = '/phapluat/' . $phapluat_img;
 move_uploaded_file($_FILES['file_pl']['tmp_name'], $duongdan);
 
-$ngayhieuluc = $_POST['ngayhieuluc_pl'];
+$day = date("y-m-d");
 
 //echo $day;
 session_start();
@@ -21,7 +21,7 @@ session_start();
 include '../../connectsql.php';
 $id_admin = $_SESSION["id_admin"];
 //Viet cau truy van Sql
-$sql = "INSERT INTO phapluat ( ID_CHUYENMUC_PL, ID_ADMIN, TIEUDE_PL, NOIDUNG_PL, FILE_PL, NGAYDANG_PL, NGAY_HIEULUC) VALUES ('$cm_pl','$id_admin','$tieude_pl','$nd_pl','$duongdan1',CURRENT_DATE,'$ngayhieuluc')";
+$sql = "INSERT INTO phapluat ( ID_CHUYENMUC_PL, ID_ADMIN, TIEUDE_PL, NOIDUNG_PL, FILE_PL, NGAYDANG_PL) VALUES ('$cm_pl','$id_admin','$tieude_pl','$nd_pl','$duongdan1','$day')";
 echo $sql;
 //thưc hien truy van
 $result = $con->query($sql);

@@ -4,7 +4,7 @@ require('../views/header.php')
 <div class="main-panel">
   <div class="content-wrapper content-cap">
     <div class="page-header">
-      <h3 class="page-title"> PHÁP LUẬT </h3>
+      <h3 class="page-title">VĂN BẢN CỦA HIỆP HỘI</h3>
     </div>
     <div class="col-lg-12 grid-margin stretch-card">
       <div class="card">
@@ -15,43 +15,18 @@ require('../views/header.php')
                 <thead>
                   <tr>
                     <th> </th>
-                    <th style="font-size:18px; text-align: left;">Thêm pháp luật</th>
+                    <th style="font-size:18px; text-align: left;">Thêm văn bản</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <th>Tiêu đề pháp luật</th>
+                    <th>Tiêu đề văn bản</th>
                     <td><input style="width: 100%;" type="text" name="tieude_pl" value=""></td>
                   </tr>
                   <tr>
-                    <th>Chuyên mục pháp luật</th>
-                    <td><select name="cm_pl" id="cm_pl">
-
-                        <?php
-
-
-                        include '../../connectsql.php';
-
-                        $sql = "SELECT * FROM chuyenmucphapluat";
-                        //echo $sql; 
-                        $result = $con->query($sql);
-                        $stt = 0;
-                        while ($row = $result->fetch_assoc()) {
-                          $stt = $stt + 1;
-                          echo "<option value='" . $row['ID_CHUYENMUC_PL'] . "'>" . $row['TEN_CHUYENMUC_PL'] . " </option><br>";
-                        }
-                        $con->close();
-
-                        ?>
-                      </select></td>
-                  </tr>
-                  <tr>
-                    <th>Nội dung pháp luật</th>
+                    <th>Nội dung văn bản</th>
                     <td><textarea id="nd_pl" name="nd_pl" rows="8" cols="40"></textarea>
                       <script>
-                        //config={};
-                        //config.entities_latin=false;
-                        //config.language="Vi";
                         CKEDITOR.config.pasteFromWordPromptCleanup = true;
                         CKEDITOR.config.pasteFromWordRemoveFontStyles = false;
                         CKEDITOR.config.pasteFromWordRemoveStyles = false;
@@ -67,22 +42,13 @@ require('../views/header.php')
                     </td>
                   </tr>
                   <tr>
-                    <th>File pháp luật</th>
+                    <th>File văn bản</th>
                     <td><input type="file" name="file_pl" value=""></td>
-                  </tr>
-                  <tr>
-                    <th>Ngày hiệu lực</th>
-                    <td><input type="date" name="ngayhieuluc_pl" value=""></td>
                   </tr>
                 </tbody>
               </table>
               <button type="submit" class="btn btn-primary btn-fw" style="float:right;">Thêm</button>
-
             </form>
-
-
-
-
           </div>
         </div>
       </div>
@@ -98,11 +64,9 @@ require('../views/header.php')
             <thead>
               <tr>
                 <th> STT </th>
-                <th> Tên chuyên mục pháp luật </th>
                 <th> Tiêu đề </th>
-                <th> File pháp luật</th>
-                <th> Ngày hiệu lực</th>
-                <th> Ngày đăng pháp luật</th>
+                <th> File</th>
+                <th> Ngày đăng</th>
                 <th>Chức năng</th>
                 <th></th>
               </tr>
@@ -114,7 +78,7 @@ require('../views/header.php')
 
               include '../../connectsql.php';
 
-              $sql = "SELECT * FROM phapluat INNER JOIN chuyenmucphapluat on phapluat.ID_CHUYENMUC_PL=chuyenmucphapluat.ID_CHUYENMUC_PL";
+              $sql = "SELECT * FROM vanbanhiephoi";
               //echo $sql; 
               $result = $con->query($sql);
 
@@ -123,10 +87,8 @@ require('../views/header.php')
                 $stt = $stt + 1;
                 echo "<tr>
                                <td >" . $stt . " </td>
-                               <td >" . $row['TEN_CHUYENMUC_PL'] . "</td>
                                <td >" . $row['TIEUDE_PL'] . "</td>
                                <td >" . $row['FILE_PL'] . "</td>
-                               <td >" . date('d/m/Y', strtotime($row['NGAY_HIEULUC'])) . "</td>
                                <td >" . $row['NGAYDANG_PL'] . "</td>
                                <td ><a href='suaphapluat.php?id_pl=" . $row['ID_PL'] . "'><label class='badge badge-info'>Sửa</label></a></td>
                                <td ><a href='xoaphapluat.php?id_pl=" . $row['ID_PL'] . "'><label class='badge badge-danger'>Xóa</label></a></td>

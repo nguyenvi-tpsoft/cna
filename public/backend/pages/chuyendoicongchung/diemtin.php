@@ -53,32 +53,33 @@ require('../views/header.php')
                 </div>
             </div>
         </div>
-        <div class="card">
-            <div class="card-body">
+        <div class="col-lg-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
 
-                <div class="table-responsive">
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th> STT </th>
-                                <th> Tiêu đề tin</th>
-                                <th> Hình ảnh tin</th>
-                                <th> Ngày đăng tin</th>
-                                <th>Chức năng</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php
-                            include '../../connectsql.php';
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th> STT </th>
+                                    <th> Tiêu đề tin</th>
+                                    <th> Hình ảnh tin</th>
+                                    <th> Ngày đăng tin</th>
+                                    <th>Chức năng</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php
+                                include '../../connectsql.php';
 
-                            $sql = "SELECT * FROM chuyendoicongchung";
-                            //echo $sql; 
-                            $result = $con->query($sql);
-                            $stt = 0;
-                            while ($row = $result->fetch_assoc()) {
-                                $stt = $stt + 1;
-                                echo "<tr>
+                                $sql = "SELECT * FROM chuyendoicongchung";
+                                //echo $sql; 
+                                $result = $con->query($sql);
+                                $stt = 0;
+                                while ($row = $result->fetch_assoc()) {
+                                    $stt = $stt + 1;
+                                    echo "<tr>
                                <td >" . $stt . " </td>
                                <td >" . $row['TIEUDE_DT'] . "</td>
                                <td > <img src='../../../upload" . $row['HINHANH_DT'] . "' alt='' style='width:150px;height: 150px;'></td>
@@ -86,10 +87,11 @@ require('../views/header.php')
                                <td ><a href='suadiemtin.php?id_dt=" . $row['ID_DT'] . "'><label class='badge badge-info'>Sửa</label></a></td>
                                <td ><a href='xoadiemtin.php?id_dt=" . $row['ID_DT'] . "'><label class='badge badge-danger'>Xóa</label></a></td>
                                </tr>";
-                            }
-                            echo "</tbody></table>";
-                            $con->close();
-                            ?>
+                                }
+                                echo "</tbody></table>";
+                                $con->close();
+                                ?>
+                    </div>
                 </div>
             </div>
         </div>

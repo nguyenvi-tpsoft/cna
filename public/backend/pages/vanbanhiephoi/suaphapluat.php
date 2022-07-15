@@ -75,12 +75,8 @@ $_SESSION['id_pl'] = $id_pl;
                     </td>
                   </tr>
                   <tr>
-                    <th>Ngày hiệu lực</th>
-                    <td><input type="date" name="ngayhieuluc_pl" value="<?php echo $row['NGAY_HIEULUC'] ?>"></td>
-                  </tr>
-                  <tr>
                     <th>Hình ảnh pháp luật</th>
-                    <td><input type='file' name='file_pl' value=" <?php echo $row['FILE_PL'] ?>"> </td>
+                    <td><input type='file' name='file_pl' value="<?php echo $row['FILE_PL'] ?>"> </td>
                   </tr>
                 </tbody>
               </table>
