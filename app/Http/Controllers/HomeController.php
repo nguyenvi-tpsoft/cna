@@ -35,7 +35,6 @@ class HomeController extends Controller
     $phapluat_all = DB::table('phapluat')->get();
 
 
-
     $vpcc = DB::table('vanphongcongchung')
       ->orderby('NGAYTHANHLAP_VPCC', 'asc')
       ->get();
