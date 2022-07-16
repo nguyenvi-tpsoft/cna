@@ -21,7 +21,7 @@ require('../views/header.php')
                 <tbody>
                   <tr>
                     <th>Tiêu đề văn bản</th>
-                    <td><input type="text" name="tieude_vb" value=""></td>
+                    <td><input style="width: 100%;" type="text" name="tieude_vb" value=""></td>
                   </tr>
                   <tr>
                     <th>Chuyên mục văn bản</th>
@@ -86,8 +86,6 @@ require('../views/header.php')
         </div>
       </div>
     </div>
-    <br>
-
 
     <div class="card">
       <div class="card-body">
@@ -141,12 +139,8 @@ require('../views/header.php')
         </div>
       </div>
     </div>
-    <!-- content-wrapper ends -->
-    <!-- partial:../../partials/_footer.html -->
-
-    <!-- partial -->
+   
   </div>
-  <!-- main-panel ends -->
 </div>
 <?php
 include('../views/footer.php')

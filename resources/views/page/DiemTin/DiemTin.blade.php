@@ -27,7 +27,6 @@
     <div class="container">
 
         <div class="feature-products tab-content">
-
             <!-- List -->
             <div id="list" class="tab-pane active">
                 <div class="product">
@@ -70,11 +69,8 @@
             </div>
         </div>
 
-        <div style="margin-left: 30rem">
-
+        <div class="phantrang">
             {{ $diemtin->links("pagination::bootstrap-4") }}
-
-
         </div>
     </div>
 </div>

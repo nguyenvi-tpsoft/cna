@@ -24,6 +24,6 @@ class ChuyenDoiCongChungController extends Controller
             ->get();
         $lienquan = DB::table('chuyendoicongchung')->where('ID_DT', 'not like', $ID_DT)->orderby('ID_DT', 'desc')->limit(5)->get();
 
-        return view('page.chuyendoicongchung.chuyendoicongchung')->with('chuyendoicongchung', $chuyendoicongchung)->with('lienket', $lienket)->with('lienquan', $lienquan);
+        return view('page.ChuyenDoiCongChung.ChuyenDoiCongChung')->with('chuyendoicongchung', $chuyendoicongchung)->with('lienket', $lienket)->with('lienquan', $lienquan);
     }
 }

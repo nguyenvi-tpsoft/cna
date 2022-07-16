@@ -44,6 +44,10 @@ a:hover {
     flex-direction: column;
     align-items: center;
 }
+.phantrang {
+    display: flex;
+    justify-content: center;
+}
 .btn:focus,
 input:focus,
 button:focus {
@@ -5504,7 +5508,7 @@ textarea:focus {
     color: #91ad41;
 }
 .page-title-breadcrumbs .page-title-container h1 {
-    font-size: 45px;
+    font-size: 30px;
     color: white;
     font-family: auto;
 }

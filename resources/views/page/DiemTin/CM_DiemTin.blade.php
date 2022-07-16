@@ -119,11 +119,8 @@
             </div>
         </div>
 
-        <div style="margin-left: 30rem">
-
+        <div class="phantrang">
             {{-- {{ $chuyenmuc->links("pagination::bootstrap-4") }} --}}
-
-
         </div>
     </div>
 </div>

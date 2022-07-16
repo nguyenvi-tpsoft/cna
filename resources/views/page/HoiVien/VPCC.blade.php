@@ -16,7 +16,6 @@
                     <li class="breadcrumb-sep">/</li>
                     <li><a href="{{URL::to('/danh-sach-vpcc')}}"><span style="font-family: 'FontAwesome'; color: #ffff">Tổ chức hành nghề công chứng</span></a>
                     </li>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -65,11 +64,8 @@
 
         </div>
 
-        <div style="margin-left: 30rem">
-
+        <div class="phantrang">
             {{ $vpcc->links("pagination::bootstrap-4") }}
-
-
         </div>
     </div>
 </div>

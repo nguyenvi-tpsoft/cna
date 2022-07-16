@@ -86,7 +86,7 @@
             </div>
         </div>
 
-        <div style="margin-left: 30rem">
+        <div class="phantrang">
 
             {{ $phapluat->links("pagination::bootstrap-4") }}
 

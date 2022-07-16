@@ -75,7 +75,7 @@ require('../views/header.php')
                   </tr>
                   <tr>
                     <th>File văn bản</th>
-                    <td><input type='file' name='file_vb' value=''> </td>
+                    <td><input style="width: 100%;" type='file' name='file_vb' value=''> </td>
                   </tr>
                   <tr>
                     <th>Hình ảnh văn bản</th>
@@ -85,26 +85,12 @@ require('../views/header.php')
               </table>
 
               <td><button type='submit' class='btn btn-primary btn-fw' style='float:right;' name='id_vb' value='<?php echo $id_vb ?>'>Cập nhật</button> </td>
-              <!-- <td> <input type='submit' class='btn btn-primary btn-sm btn-block btn-success' value='Cập nhật' name="iddt"></td> -->
             </form>
-
-
-
-
           </div>
         </div>
       </div>
     </div>
   </div>
-  <br>
-
-
-
-
-  <!-- content-wrapper ends -->
-  <!-- partial:../../partials/_footer.html -->
-
-  <!-- partial -->
 </div>
 
 <?php

@@ -65,7 +65,6 @@
 
 <div class="section product-default-item">
     <div class="container">
-
         <div class="feature-products tab-content">
 
             <!-- List -->
@@ -99,12 +98,8 @@
                 </div>
             </div>
         </div>
-
-        <div style="margin-left: 30rem">
-
+        <div class="phantrang">
             {{ $phapluat->links("pagination::bootstrap-4") }}
-
-
         </div>
     </div>
 </div>

@@ -22,7 +22,7 @@ class HomeController extends Controller
   {
     $active_home = 'menu_active';
     $diemtin1 = DB::table('diemtin')->orderby('ID_DT', 'desc')->limit(1)->get();
-    $diemtin = DB::table('diemtin')->orderby('ID_DT', 'desc')->offset(1)->limit(4)->get();
+    $diemtin = DB::table('diemtin')->orderby('ID_DT', 'desc')->offset(1)->limit(3)->get();
     $chuyendoicongchung = DB::table('chuyendoicongchung')->orderby('ID_DT', 'desc')->get();
 
     $vanban = DB::table('vanban')->orderby('ID_VB', 'desc')->limit(4)->get();

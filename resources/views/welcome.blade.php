@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="{{asset('public/frontend/libs/nivo-slider/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('public/frontend/libs/slider-range/css/jslider.css')}}">
     <link rel="stylesheet" href="{{asset('public/frontend/libs/font-cs/cs.css')}}"><!-- Template CSS -->
-    <link rel="stylesheet" type="text/css" href="{{asset('public/frontend/css/style.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('public/frontend/css/responsive.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('public/frontend/css/style.css?v=12345')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('public/frontend/css/responsive.css?v=212')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('public/frontend/css/owl.carousel.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('public/frontend/css/sweetalert.css')}}">
     <link rel="stylesheet" href="{{asset('public/frontend/css/toastr.min.css')}}">
@@ -318,22 +318,13 @@
                                                     {{$lk->TEN_LKWEB}}
 
                                                 </option>
-
                                                 @endforeach
-
-
                                             </select>
-
-
                                         </div>
                                     </form>
                                 </div>
-
                             </div>
                         </div>
-
-
-
                     </div>
                 </div>
             </div>
@@ -342,7 +333,6 @@
                     <p>Copyright by Hội Công chứng viên TP. Cần Thơ © 2022</p>
                 </div>
             </div>
-
         </div>
     </footer>
     </div><!-- Back-To-Top Button -->

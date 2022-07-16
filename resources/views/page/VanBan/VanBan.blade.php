@@ -11,9 +11,12 @@
             </div>
             <div class="breadcrumbs-container text-center">
                 <ul class="breadcrumbs primary-font">
-                    <li><a href="#"><span style="font-family: 'FontAwesome'; color: #ffff">Văn bản</span></a>
+                    <li>
+                        <a href="#">
+                            <span style="font-family: 'FontAwesome'; color: #ffff">Văn bản</span>
+                        </a>
                     </li>
-                    </li>
+
                 </ul>
             </div>
         </div>
@@ -68,11 +71,8 @@
             </div>
         </div>
 
-        <div style="margin-left: 30rem">
-
+        <div class="phantrang">
             {{ $vanban->links("pagination::bootstrap-4") }}
-
-
         </div>
     </div>
 </div>

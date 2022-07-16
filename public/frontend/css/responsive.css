@@ -69,19 +69,28 @@
 @media (max-width: 767.98px) {
 }
 @media screen and (max-width: 575.98px) {
+    .content-about .item-content .sub-title h3 {
+        font-size: 16px;
+    }
+    .vanbancuahoi_div h2 {
+        font-size: 16px;
+    }
+    .tochuchanhnghecongchung_h2 {
+        font-size: 16px !important;
+    }
     .chuyendoiso_title_div {
         flex-direction: column;
     }
     .chuyendoicongchung_section .title {
-        font-size: 20px;
+        font-size: 18px;
     }
     .title_main_red::before {
         content: "";
         position: absolute;
         width: 5px;
         left: 5px;
-        top: 5px;
-        bottom: 4px;
+        top: 4px;
+        bottom: 5px;
         -webkit-transform: skew(-20deg);
         -khtml-transform: skew(-20deg);
         -moz-transform: skew(-20deg);
@@ -125,7 +134,7 @@
     .page-title h2 {
         color: black;
         font-weight: bold;
-        font-size: 22px;
+        font-size: 17px;
         margin: 15px 0;
     }
     .group-store .index-core-group {
@@ -204,7 +213,7 @@
     }
     .oars-store .page-title .title-h2 {
         text-align: center;
-        font-size: 20px;
+        font-size: 18px;
         margin: 0;
     }
     .oars-store .index-core-group .item-content {

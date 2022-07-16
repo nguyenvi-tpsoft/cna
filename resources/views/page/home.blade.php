@@ -216,7 +216,7 @@
         <div class="container">
             <div class="page-title color">
                 <div class="title-icon text-left">
-                    <h2 class="title-h2 title_main_red">TỔ CHỨC HÀNH NGHỀ CÔNG CHỨNG </h2>
+                    <h2 class="title-h2 title_main_red tochuchanhnghecongchung_h2">TỔ CHỨC HÀNH NGHỀ CÔNG CHỨNG </h2>
                 </div>
             </div>
 
