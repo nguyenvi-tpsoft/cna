@@ -16,15 +16,11 @@
                             <span style="font-family: 'FontAwesome'; color: #ffff">Văn bản</span>
                         </a>
                     </li>
-
                 </ul>
             </div>
         </div>
     </div>
 </div>
-
-
-
 <div class="section product-default-item">
     <div class="container">
 
