@@ -395,7 +395,6 @@
             $('#lien-ket').on('change', function() {
                 var url = $(this).val(); // get selected value
                 if (url) { // require a URL
-                    // window.location = url; // redirect
                     window.open(url); // redirect
                 }
                 return false;
