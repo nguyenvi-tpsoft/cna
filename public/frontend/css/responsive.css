@@ -69,6 +69,26 @@
 @media (max-width: 767.98px) {
 }
 @media screen and (max-width: 575.98px) {
+    .chuyendoiso_title_div {
+        flex-direction: column;
+    }
+    .chuyendoicongchung_section .title {
+        font-size: 20px;
+    }
+    .title_main_red::before {
+        content: "";
+        position: absolute;
+        width: 5px;
+        left: 5px;
+        top: 5px;
+        bottom: 4px;
+        -webkit-transform: skew(-20deg);
+        -khtml-transform: skew(-20deg);
+        -moz-transform: skew(-20deg);
+        -o-transform: skew(-20deg);
+        transform: skew(-20deg);
+        background-color: #dd3333;
+    }
     .item-content {
         padding: 10px 0;
     }
@@ -184,7 +204,7 @@
     }
     .oars-store .page-title .title-h2 {
         text-align: center;
-        font-size: 22px;
+        font-size: 20px;
         margin: 0;
     }
     .oars-store .index-core-group .item-content {
