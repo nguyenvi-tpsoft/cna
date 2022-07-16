@@ -84,7 +84,7 @@
         <div class="container">
             <div class="chuyendoicongchung_section">
                 <div class="title text-center">
-                    <div class="chuyendoiso_title_div">
+                    <div class="chuyendoiso_title_div chuyendoicongchung_h2">
                         <h2 class="title title_main_red">CHUYỂN ĐỔI SỐ CÔNG CHỨNG</h2>
                     </div>
                 </div>
