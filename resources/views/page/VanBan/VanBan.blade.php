@@ -30,20 +30,9 @@
                 <div class="product">
                     <div class="item">
                         @foreach($vanban as $key=>$vb)
-                        <div class="row" style="margin-bottom: 50px">
-
-                            <div class="col-md-5 col-sm-12">
-                                <div class="product-thumb">
-                                    <div class="product-container item-img">
-                                        <div class="product-image-container">
-                                            <a class="product-img-link" href="{{URL::to('chi-tiet-van-ban/'.$vb->ID_VB)}}" title=""><img class="w-100" src="{{URL::to('public/upload/'.$vb->HINHANH_VB)}}" alt="img" style="height: 20rem; border-radius: 0.5rem">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-7 col-sm-12">
-                                <div class="content-right diemtin" style="color: black">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="content-right diemtin" style="min-width: 100%; color: black;border-bottom: 1px solid #ddd;padding: 15px 0;">
                                     <a class="title" href="{{URL::to('chi-tiet-van-ban/'.$vb->ID_VB)}}">
                                         {{$vb->TIEUDE_VB}}</a>
 
