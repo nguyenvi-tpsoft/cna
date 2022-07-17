@@ -35,7 +35,7 @@ $_SESSION['id_bmccv'] = $id_bmccv;
                 <tbody>
                   <tr>
                     <th>Tên biểu mẫu</th>
-                    <td><input style="width: 100%;" tyle='text' value=" <?php echo $ten_bmccv ?> " name='ten_bmccv'></td>
+                    <td><input style="width: 100%;" tyle='text' value="<?= $ten_bmccv ?>" name='ten_bmccv'></td>
                   </tr>
 
                   <tr>

@@ -37,11 +37,11 @@ $_SESSION['id_dt'] = $id_dt;
                 <tbody>
                   <tr>
                     <th>Tiêu đề điểm tin</th>
-                    <td><input style="width: 100%;" tyle='text' value=" <?php echo $tieude ?> " name='tieudediemtin'></td>
+                    <td><input style="width: 100%;" tyle='text' value="<?= $tieude ?>" name='tieudediemtin'></td>
                   </tr>
                   <tr>
                     <th>Chuyên mục điểm tin</th>
-                    <td><select name='cmdt' id='cmdt' value=<?php echo $row["TEN_CHUYENMUC_DT"] ?>>
+                    <td><select name='cmdt' id='cmdt' value='<?php echo $row["TEN_CHUYENMUC_DT"] ?>'>
 
                         <?php
 

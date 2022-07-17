@@ -34,11 +34,11 @@ $_SESSION['id_dt'] = $id_dt;
                                 <tbody>
                                     <tr>
                                         <th>Tiêu đề tin</th>
-                                        <td><input style="width: 100%;" tyle='text' value=" <?php echo $tieude ?> " name='tieudediemtin'></td>
+                                        <td><input style="width: 100%;" tyle='text' value="<?= $tieude ?>" name='tieudediemtin'></td>
                                     </tr>
                                     <tr>
                                         <th>Nội dung điểm tin</th>
-                                        <td><textarea id='nddt' name='nddt' rows='8' cols='40' value=""><?php echo $noidung ?></textarea>
+                                        <td><textarea id='nddt' name='nddt' rows='8' cols='40' value=""><?= $noidung ?></textarea>
                                             <script>
                                                 CKEDITOR.config.pasteFromWordPromptCleanup = true;
                                                 CKEDITOR.config.pasteFromWordRemoveFontStyles = false;
