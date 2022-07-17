@@ -47,7 +47,7 @@
                 <div class="block-content">
                     <div class="row">
                         <div class="col-sm-12">
-                            <div class="ckeditor_div">
+                            <div class="ckeditor_div" style="border-bottom: 1px solid #ddd; padding-bottom: 10px;margin-bottom: 10px;">
                                 @foreach($chuyendoicongchung as $key=>$dt)
 
                                 {!!$dt->NOIDUNG_DT!!}

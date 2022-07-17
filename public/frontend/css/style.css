@@ -13,7 +13,7 @@ body {
     src: url("../libs/font/Streamster.ttf");
 }
 .ckeditor_div {
-    width: 100% !important;
+    width: 95% !important;
 }
 .ckeditor_div img {
     max-width: 100% !important;
