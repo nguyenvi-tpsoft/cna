@@ -47,11 +47,13 @@
                 <div class="block-content">
                     <div class="row">
                         <div class="col-sm-12">
-                            @foreach($chuyendoicongchung as $key=>$dt)
+                            <div class="ckeditor_div">
+                                @foreach($chuyendoicongchung as $key=>$dt)
 
-                            <p>{!!$dt->NOIDUNG_DT!!}</p>
+                                {!!$dt->NOIDUNG_DT!!}
 
-                            @endforeach
+                                @endforeach
+                            </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="sidebar sidebar-collection">

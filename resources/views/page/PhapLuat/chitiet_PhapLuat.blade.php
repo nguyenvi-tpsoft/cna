@@ -50,11 +50,9 @@
                 <div class="block-content m-top">
                     <div class="row">
                         <div class="col-md-9 col-sm-12 m-b-50">
-                            <div class="">
+                            <div class="ckeditor_div">
                                 @foreach($phapluat as $key=>$pl)
-
-                                <p>{!!$pl->NOIDUNG_PL!!}</p>
-
+                                {!!$pl->NOIDUNG_PL!!}
                                 <div style="color: #b36b00; font-size: 16px">Download: <a href="{{asset('public/upload'.$pl->FILE_PL)}}" style="color: #0059b3"> tài liệu</a></div>
                                 @endforeach
                             </div>

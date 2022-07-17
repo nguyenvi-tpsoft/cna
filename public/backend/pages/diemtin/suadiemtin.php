@@ -66,17 +66,7 @@ $_SESSION['id_dt'] = $id_dt;
                     <th>Nội dung điểm tin</th>
                     <td><textarea id='nddt' name='nddt' rows='8' cols='40' value=""><?php echo $noidung ?></textarea>
                       <script>
-                        CKEDITOR.config.pasteFromWordPromptCleanup = true;
-                        CKEDITOR.config.pasteFromWordRemoveFontStyles = false;
-                        CKEDITOR.config.pasteFromWordRemoveStyles = false;
-                        CKEDITOR.config.language = 'Vi';
-                        CKEDITOR.config.htmlEncodeOutput = false;
-                        CKEDITOR.config.ProcessHTMLEntities = false;
-                        CKEDITOR.config.entities = false;
-                        CKEDITOR.config.entities_latin = false;
-                        CKEDITOR.config.ForceSimpleAmpersand = true;
-                        var editor = CKEDITOR.replace('nddt');
-                        CKFinder.setupCKEditor(editor);
+                        CKEDITOR.replace('nddt');
                       </script>
 
                     </td>

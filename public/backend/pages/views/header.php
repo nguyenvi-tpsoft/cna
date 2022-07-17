@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Trang chủ</title>
-    <script src="//cdn.ckeditor.com/4.19.0/standard/ckeditor.js"></script>
+    <!-- <script src="//cdn.ckeditor.com/4.19.0/standard/ckeditor.js"></script> -->
+    <script src="../../assets/ckeditor/ckeditor.js"></script>
     <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css">
     <link rel="stylesheet" href="../../assets/vendors/jvectormap/jquery-jvectormap.css">
@@ -34,8 +35,8 @@
     <div class="container-scroller">
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
             <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-                <a class="sidebar-brand brand-logo" href="index.php"><img src="../../assets/images/logo_item.png" alt="logo" /></a>
-                <a class="sidebar-brand brand-logo-mini" href="index.php"><img src="../../assets/images/logo_item.png" alt="logo" /></a>
+                <a class="sidebar-brand brand-logo" href="../../index.php"><img src="../../assets/images/logo_item.png" alt="logo" /></a>
+                <a class="sidebar-brand brand-logo-mini" href="../../index.php"><img src="../../assets/images/logo_item.png" alt="logo" /></a>
             </div>
             <ul class="nav">
                 <li class="nav-item profile">
@@ -122,7 +123,7 @@
                 </li>
 
                 <li class="nav-item menu-items">
-                    <a class="nav-link" href="pages/khach.php">
+                    <a class="nav-link" href="../../pages/khach.php">
                         <span class="menu-icon">
                             <i class="mdi mdi-table-large"></i>
                         </span>
@@ -130,7 +131,7 @@
                     </a>
                 </li>
                 <li class="nav-item menu-items">
-                    <a class="nav-link" href="pages/bieumau/bieumau.php">
+                    <a class="nav-link" href="../../pages/bieumau/bieumau.php">
                         <span class="menu-icon">
                             <i class="mdi mdi-table-large"></i>
                         </span>
@@ -139,7 +140,7 @@
                 </li>
 
                 <li class="nav-item menu-items">
-                    <a class="nav-link" href="pages/thuvien/thuvien.php">
+                    <a class="nav-link" href="../../pages/thuvien/thuvien.php">
                         <span class="menu-icon">
                             <i class="mdi mdi-table-large"></i>
                         </span>
@@ -148,7 +149,7 @@
                 </li>
 
                 <li class="nav-item menu-items">
-                    <a class="nav-link" href="pages/ykiendonggop.php">
+                    <a class="nav-link" href="../../pages/ykiendonggop.php">
                         <span class="menu-icon">
                             <i class="mdi mdi-table-large"></i>
                         </span>

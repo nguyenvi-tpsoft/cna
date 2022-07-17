@@ -2,26 +2,19 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Trang chủ</title>
-    <script src="//cdn.ckeditor.com/4.19.0/standard/ckeditor.js"></script>
-    <!-- plugins:css -->
+    <!-- <script src="//cdn.ckeditor.com/4.19.0/standard/ckeditor.js"></script> -->
+    <script src="../../assets/ckeditor/ckeditor.js"></script>
     <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
-    <!-- endinject -->
-    <!-- Plugin css for this page -->
     <link rel="stylesheet" href="assets/vendors/jvectormap/jquery-jvectormap.css">
     <link rel="stylesheet" href="assets/vendors/flag-icon-css/css/flag-icon.min.css">
     <link rel="stylesheet" href="assets/vendors/owl-carousel-2/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/vendors/owl-carousel-2/owl.theme.default.min.css">
-    <!-- End plugin css for this page -->
-    <!-- inject:css -->
-    <!-- endinject -->
-    <!-- Layout styles -->
+
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- End layout styles -->
     <link rel="shortcut icon" href="assets/images/logo.jpg" />
 </head>
 
@@ -108,7 +101,7 @@
                     </a>
                 </li>
                 <li class="nav-item menu-items">
-                    <a class="nav-link" href="../../pages/vanbanhiephoi/phapluat.php">
+                    <a class="nav-link" href="../backend/pages/vanbanhiephoi/phapluat.php">
                         <span class="menu-icon">
                             <i class="mdi mdi-table-large"></i>
                         </span>
@@ -133,7 +126,7 @@
                 </li>
 
                 <li class="nav-item menu-items">
-                    <a class="nav-link" href="pages/khach.php">
+                    <a class="nav-link" href="../backend/pages/khach.php">
                         <span class="menu-icon">
                             <i class="mdi mdi-table-large"></i>
                         </span>
@@ -141,7 +134,7 @@
                     </a>
                 </li>
                 <li class="nav-item menu-items">
-                    <a class="nav-link" href="pages/bieumau/bieumau.php">
+                    <a class="nav-link" href="../backend/pages/bieumau/bieumau.php">
                         <span class="menu-icon">
                             <i class="mdi mdi-table-large"></i>
                         </span>
@@ -150,7 +143,7 @@
                 </li>
 
                 <li class="nav-item menu-items">
-                    <a class="nav-link" href="pages/thuvien/thuvien.php">
+                    <a class="nav-link" href="../backend/pages/thuvien/thuvien.php">
                         <span class="menu-icon">
                             <i class="mdi mdi-table-large"></i>
                         </span>
@@ -159,7 +152,7 @@
                 </li>
 
                 <li class="nav-item menu-items">
-                    <a class="nav-link" href="pages/ykiendonggop.php">
+                    <a class="nav-link" href="../backend/pages/ykiendonggop.php">
                         <span class="menu-icon">
                             <i class="mdi mdi-table-large"></i>
                         </span>

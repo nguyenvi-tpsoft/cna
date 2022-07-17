@@ -22,10 +22,8 @@ if (!empty($_FILES['hinhanhdt']['name'])) {
     $day = date("y-m-d");
     $sql = "UPDATE diemtin SET  ID_CHUYENMUC_DT='$cmdt',ID_ADMIN='$id_admin', TIEUDE_DT='$tieudediemtin', NOIDUNG_DT='$nddt', HINHANH_DT='$duongdan', NGAYDANG_DT='$day' where ID_DT='$id_dt'";
     move_uploaded_file($_FILES['hinhanhdt']['tmp_name'], $duongdan1);
-    echo $sql;
 } else {
     $sql = "UPDATE diemtin SET  ID_CHUYENMUC_DT='$cmdt',ID_ADMIN='$id_admin', TIEUDE_DT='$tieudediemtin', NOIDUNG_DT='$nddt', NGAYDANG_DT='$day' where ID_DT='$id_dt'";
-    echo $sql;
 }
 
 

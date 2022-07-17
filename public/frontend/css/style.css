@@ -12,6 +12,15 @@ body {
     font-family: "Streamster";
     src: url("../libs/font/Streamster.ttf");
 }
+.ckeditor_div {
+    width: 100% !important;
+}
+.ckeditor_div img {
+    max-width: 100% !important;
+}
+.ckeditor_div figcaption {
+    text-align: center !important;
+}
 h1,
 h2,
 h3,
@@ -1073,10 +1082,10 @@ textarea:focus {
     color: black;
     margin-left: 18px;
     background-color: #acdfac;
-    padding: 0PX 11PX;
+    padding: 0px 11px;
     border-radius: 5px;
     font-family: "FontAwesome";
-    FONT-STYLE: italic;
+    font-style: italic;
 }
 .button-main.diemtin:hover {
     background-color: #fff;

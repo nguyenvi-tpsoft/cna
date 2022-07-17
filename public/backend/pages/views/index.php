@@ -1,10 +1,7 @@
 <div class="main-panel">
   <div class="content-wrapper">
     <?php
-    //Tao ket nôi
 
-    $con = new mysqli("127.0.0.1", "root", "", "webtintuc");
-    $con->set_charset("utf8");
     $id_admin = $_SESSION["id_admin"];
     //echo $tieudediemtin, $cmdt, $nddt, $day, $id_admin;
     //Viet cau truy van Sql

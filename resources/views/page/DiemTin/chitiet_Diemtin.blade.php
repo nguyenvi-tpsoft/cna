@@ -48,11 +48,12 @@
                 <div class="block-content">
                     <div class="row">
                         <div class="col-md-9 col-sm-12 m-b-50">
-                            @foreach($diemtin as $key=>$dt)
+                            <div class="ckeditor_div">
+                                @foreach($diemtin as $key=>$dt)
+                                {!!$dt->NOIDUNG_DT!!}
+                                @endforeach
+                            </div>
 
-                            <p>{!!$dt->NOIDUNG_DT!!}</p>
-
-                            @endforeach
                         </div>
                         <div class="col-md-3 col-sm-12">
                             <div class="sidebar sidebar-collection">

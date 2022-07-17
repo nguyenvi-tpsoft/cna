@@ -48,6 +48,7 @@ require('../views/header.php')
                     <td><textarea id="nddt" name="nddt" rows="8" cols="40"></textarea>
                       <script>
                         var editor = CKEDITOR.replace('nddt');
+                        // CKEDITOR.config.extraPlugins = 'image2';
                       </script>
                     </td>
                   </tr>
