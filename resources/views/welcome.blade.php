@@ -137,7 +137,7 @@
                                         <ul class="header_lienhe">
                                             <li>
                                                 <img src="{{asset('public/frontend/img/icon_map.png')}}" alt="">
-                                                <p>296 Đường 30/4, Xuân Khánh, Ninh Kiều, Cần Thơ</p>
+                                                <p>286 Đường 30/4, Xuân Khánh, Ninh Kiều, Cần Thơ</p>
                                             </li>
                                             <li>
                                                 <img src="{{asset('public/frontend/img/icon_phone.png')}}" alt="">
@@ -261,7 +261,7 @@
                                 <div class="content">
 
                                     <ul>
-                                        <li class="d-flex bg-icon"><span><i class="fa fa-map-marker" aria-hidden="true"></i></span><span>296 Đường 30/4, Xuân Khánh, Ninh Kiều, Cần Thơ</span>
+                                        <li class="d-flex bg-icon"><span><i class="fa fa-map-marker" aria-hidden="true"></i></span><span>286 Đường 30/4, Xuân Khánh, Ninh Kiều, Cần Thơ</span>
                                         </li>
                                         <li class="d-flex bg-icon"><span><i class="fa fa-phone" aria-hidden="true"></i></span><span>Thư ký hội: Nguyễn Thu Hà: 0907 981 060
                                             </span>

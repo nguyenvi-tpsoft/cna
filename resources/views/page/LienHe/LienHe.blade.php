@@ -47,7 +47,7 @@
                         <div class="header-contact" style="color: black">
 
                             <div class="lienhe_div item-right">
-                                <p>Địa chỉ: 296 Đường 30/4, Xuân Khánh, Ninh Kiều, Cần Thơ</p>
+                                <p>Địa chỉ: 286 Đường 30/4, Xuân Khánh, Ninh Kiều, Cần Thơ</p>
                                 <p>Số điện thoại: 02923.832.213</p>
                                 <p>Email: hoicongchungct@gmail.com</p>
                             </div>
